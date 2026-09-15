@@ -1,0 +1,46 @@
+{
+  "src": "walking-2.png",
+  "archive": "MGO.MKF",
+  "chunk": 2,
+  "width": 22,
+  "height": 50,
+  "frames": 12,
+  "directions": {
+    "down": {
+      "idle": 0,
+      "walk": [
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    "left": {
+      "idle": 3,
+      "walk": [
+        4,
+        3,
+        5,
+        3
+      ]
+    },
+    "up": {
+      "idle": 6,
+      "walk": [
+        7,
+        6,
+        8,
+        6
+      ]
+    },
+    "right": {
+      "idle": 9,
+      "walk": [
+        10,
+        9,
+        11,
+        9
+      ]
+    }
+  }
+}

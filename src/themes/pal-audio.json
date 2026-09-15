@@ -1,0 +1,96 @@
+{
+  "music": {
+    "home": {
+      "src": "/themes/pal/audio/music-5.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 5,
+      "duration": 81.114,
+      "loop": true
+    },
+    "dungeon": {
+      "src": "/themes/pal/audio/music-19.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 19,
+      "duration": 40.829,
+      "loop": true
+    },
+    "battle": {
+      "src": "/themes/pal/audio/music-36.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 36,
+      "duration": 57.6,
+      "loop": true
+    },
+    "boss": {
+      "src": "/themes/pal/audio/music-46.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 46,
+      "duration": 70.543,
+      "loop": true
+    },
+    "victory": {
+      "src": "/themes/pal/audio/music-3.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 3,
+      "duration": 3.171,
+      "loop": false
+    },
+    "bossVictory": {
+      "src": "/themes/pal/audio/music-2.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 2,
+      "duration": 4.9,
+      "loop": false
+    },
+    "defeat": {
+      "src": "/themes/pal/audio/music-1.mp3",
+      "archive": "MUS.MKF",
+      "chunk": 1,
+      "duration": 21.571,
+      "loop": false
+    }
+  },
+  "effects": {
+    "death": {
+      "src": "/themes/pal/audio/sound-23.wav",
+      "archive": "VOC.MKF",
+      "chunk": 23
+    },
+    "attack": {
+      "src": "/themes/pal/audio/sound-37.wav",
+      "archive": "VOC.MKF",
+      "chunk": 37
+    },
+    "weapon": {
+      "src": "/themes/pal/audio/sound-1.wav",
+      "archive": "VOC.MKF",
+      "chunk": 1
+    },
+    "critical": {
+      "src": "/themes/pal/audio/sound-5.wav",
+      "archive": "VOC.MKF",
+      "chunk": 5
+    },
+    "magic": {
+      "src": "/themes/pal/audio/sound-9.wav",
+      "archive": "VOC.MKF",
+      "chunk": 9
+    },
+    "cover": {
+      "src": "/themes/pal/audio/sound-15.wav",
+      "archive": "VOC.MKF",
+      "chunk": 15
+    },
+    "dying": {
+      "src": "/themes/pal/audio/sound-19.wav",
+      "archive": "VOC.MKF",
+      "chunk": 19
+    }
+  },
+  "source": {
+    "MUS.MKF": "8367c9d34331f67b20b12380e809a38d3313cae199f260d272d07fcf55e11a21",
+    "VOC.MKF": "c6e14eaaff50979df269b7d6d5f7401cb354be38e3ad737e4ca3ec473c1c5ab3",
+    "DATA.MKF": "d9e82696a42d93f9623c63714a68a12645c7d650776eaa8510ec27b7c35e819a"
+  },
+  "renderer": "AdPlug 2.4 / OPL2 44100 Hz"
+}

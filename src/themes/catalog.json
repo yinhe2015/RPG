@@ -1,0 +1,5 @@
+[
+  {"id":"paper","version":2,"name":"纸上冒险","subtitle":"轻盈 · 手绘 · 原始风格","mark":"✳","accent":"#344e3c","audio":{"preset":"paper"}},
+  {"id":"pal","version":2,"extends":"paper","name":"仙剑奇侠","subtitle":"像素 · 江湖 · 经典战斗","mark":"劍","accent":"#cab574","audio":{"preset":"pal"}},
+  {"id":"voxel","version":2,"extends":"paper","name":"方块世界","subtitle":"沙盒 · 像素 · 探索","mark":"▧","accent":"#73ad45","audio":{"preset":"voxel"}}
+]

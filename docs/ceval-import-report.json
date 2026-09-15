@@ -1,0 +1,166 @@
+{
+  "dataset": "ceval/ceval-exam",
+  "revision": "617524a00b307ff6f9933702f724131fe12ca7ce",
+  "downloaded": 1761,
+  "imported": 1740,
+  "excluded": 21,
+  "bySubset": {
+    "high_school_chinese": {
+      "downloaded": 202,
+      "imported": 201
+    },
+    "high_school_geography": {
+      "downloaded": 202,
+      "imported": 201
+    },
+    "high_school_history": {
+      "downloaded": 207,
+      "imported": 207
+    },
+    "high_school_mathematics": {
+      "downloaded": 189,
+      "imported": 185
+    },
+    "high_school_physics": {
+      "downloaded": 199,
+      "imported": 199
+    },
+    "middle_school_geography": {
+      "downloaded": 125,
+      "imported": 123
+    },
+    "middle_school_history": {
+      "downloaded": 234,
+      "imported": 231
+    },
+    "middle_school_mathematics": {
+      "downloaded": 201,
+      "imported": 194
+    },
+    "middle_school_physics": {
+      "downloaded": 202,
+      "imported": 199
+    }
+  },
+  "excludedReasons": {
+    "missing_figure_or_table_context": 11,
+    "duplicate_options": 5,
+    "missing_formula_or_variable": 2,
+    "missing_symmetry_axis": 3
+  },
+  "exclusions": [
+    {
+      "id": "ceval:high_school_chinese:test:148",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:high_school_geography:test:103",
+      "reason": "duplicate_options"
+    },
+    {
+      "id": "ceval:high_school_mathematics:test:3",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:high_school_mathematics:test:78",
+      "reason": "duplicate_options"
+    },
+    {
+      "id": "ceval:high_school_mathematics:test:79",
+      "reason": "duplicate_options"
+    },
+    {
+      "id": "ceval:high_school_mathematics:test:112",
+      "reason": "missing_formula_or_variable"
+    },
+    {
+      "id": "ceval:middle_school_geography:test:11",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_geography:test:55",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_history:test:123",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_history:test:127",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_history:test:168",
+      "reason": "duplicate_options"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:test:6",
+      "reason": "missing_formula_or_variable"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:test:35",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:test:137",
+      "reason": "missing_symmetry_axis"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:test:159",
+      "reason": "missing_symmetry_axis"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:test:160",
+      "reason": "missing_symmetry_axis"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:test:174",
+      "reason": "duplicate_options"
+    },
+    {
+      "id": "ceval:middle_school_mathematics:val:16",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_physics:test:105",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_physics:test:112",
+      "reason": "missing_figure_or_table_context"
+    },
+    {
+      "id": "ceval:middle_school_physics:test:121",
+      "reason": "missing_figure_or_table_context"
+    }
+  ],
+  "sha256": {
+    "high_school_chinese/dev-00000-of-00001.parquet": "620b74b738a7634f4ba3f8fd67b84d9fbb6c0626afc8374799331ca881d99f61",
+    "high_school_chinese/test-00000-of-00001.parquet": "208d6e28e6006a4111916912d08d960d6853fe99e464c54426f09db320d474e5",
+    "high_school_chinese/val-00000-of-00001.parquet": "1b3cb0cbba7393c1a3f555dad8205899fb991bca7e4c3adb123423ae6d6069b1",
+    "high_school_geography/dev-00000-of-00001.parquet": "3e7fee34cc7dc75da6ac74fb183316b988f6ae5832c6cacdc9a2cc685fdd537f",
+    "high_school_geography/test-00000-of-00001.parquet": "bab45b5c483e2828a17405ba92344379a6de4dc6653ce4664e9eafe0504e6566",
+    "high_school_geography/val-00000-of-00001.parquet": "4bad8dbc69442c2e2c57cabfc0d87e9c9b68f1271d5826787af678a5eeeedd85",
+    "high_school_history/dev-00000-of-00001.parquet": "926f1601358349b9c715adfc84cf81f1c528ab1106c74d031cd18ff40d390408",
+    "high_school_history/test-00000-of-00001.parquet": "97bf3996db04e92ce67679c47313d1f6ef9078705233d945a9762b925dc6ab53",
+    "high_school_history/val-00000-of-00001.parquet": "67691bf762376036c778b70963fae896cf72289efefa4d6d450e9366981a8aec",
+    "high_school_mathematics/dev-00000-of-00001.parquet": "3a8f4c098cc7c47b8d93fa8fd116d39db8f06b1a46d2ffe3419fe79014c68061",
+    "high_school_mathematics/test-00000-of-00001.parquet": "e87e6eb82977defc7fe98286a881ea5c0a41c08e25f78b11cbeb495572bc88e8",
+    "high_school_mathematics/val-00000-of-00001.parquet": "d0d33970cb39b68d63cbdcd708099825d04118562c8d940f46805b527907d9a3",
+    "high_school_physics/dev-00000-of-00001.parquet": "4ee020969257ab1cb22705c91862f54e68fe9ce1061b133e63ac58f790115a8b",
+    "high_school_physics/test-00000-of-00001.parquet": "20b10402b1a902700fa2e54cef7d7335426b2f60a2680a6b5e15a55d98b03afa",
+    "high_school_physics/val-00000-of-00001.parquet": "993415a68afbc7fe93e51027da272712c805fb95c6499c27cf5217041c559b43",
+    "middle_school_geography/dev-00000-of-00001.parquet": "560fafee90c73c717eed84abbf25cd387da343ea9611c369c99717f08b658cec",
+    "middle_school_geography/test-00000-of-00001.parquet": "6e497cf4d274bca008b863b86a7fd97a9f2787b21b59e9d49c19249bc88f0cdf",
+    "middle_school_geography/val-00000-of-00001.parquet": "655590d36e68787ee87ce4ddaa54f90ddb60f477acdbf6d6e18dd1f0e2eb0f63",
+    "middle_school_history/dev-00000-of-00001.parquet": "a57d0b7ee192ab2287ca0c2b8028aaedca323d9cf378b4e614f76f52c37a4c1a",
+    "middle_school_history/test-00000-of-00001.parquet": "440ab4d70ece42e8fcc2348cb0778852f1ece6842762153f55f3b5ac3159b735",
+    "middle_school_history/val-00000-of-00001.parquet": "83ba0d7e3d1e05286de0794ec0202e83e74af2b777681c7c30664e96dc7e250b",
+    "middle_school_mathematics/dev-00000-of-00001.parquet": "a5efc62f0bc67e1bd1955f57896698129d72d8a4dd97c4971367f8387e6fbe75",
+    "middle_school_mathematics/test-00000-of-00001.parquet": "34151a14afee794c3b17d616e4d287e604a94d4fc368dac2b3ac09083716dd75",
+    "middle_school_mathematics/val-00000-of-00001.parquet": "ddd771e85a96c091f45e7ea6bb6522f74e03e93e91c48e9f3dac11b8c5db3790",
+    "middle_school_physics/dev-00000-of-00001.parquet": "236c03f04d55849cc0abff711b6ae428ba2b47515e5a6e9f3678821ad4a4895f",
+    "middle_school_physics/test-00000-of-00001.parquet": "f8eab15dde69db3eb2d032358e03860ec4a488fd196c6fd174b190c5994c9aa6",
+    "middle_school_physics/val-00000-of-00001.parquet": "bd9ee6cfb116711a57393c0d4cdf12fb2d0bda6c1faa13e7f364d401941e220c"
+  }
+}

@@ -1,0 +1,138 @@
+/* Shared battle layout. Theme scenes provide the world; all controls live inside it. */
+:root{--arena-panel:#fffef4ef;--arena-ink:#354e3c;--arena-border:#b6c3a1;--arena-radius:14px}
+:root[data-theme=pal]{--arena-panel:#20382eed;--arena-ink:#f0dfb0;--arena-border:#a4996e;--arena-radius:2px}
+:root[data-theme=voxel]{--arena-panel:#193e32ed;--arena-ink:#ecf2ca;--arena-border:#a3bb7c;--arena-radius:0px}
+[data-battle=true] body{overflow:hidden}
+.game-shell.in-battle{max-width:none;width:100%;height:100dvh;min-height:0;padding:0;margin:0}
+.combat-screen.arena-shell{width:100%;max-width:none;margin:0;padding:0}
+.battle-arena{--dock-height:clamp(285px,40dvh,410px);position:relative;height:100dvh;width:100%;overflow:hidden;isolation:isolate;background:#f3f1e4}
+.arena-world,.arena-shade{position:absolute;inset:0;pointer-events:none}
+.arena-world .game-scene{position:absolute;inset:0;margin:0;width:100%;max-width:none;height:100%;aspect-ratio:auto;border:0;box-shadow:none;overflow:hidden}
+.arena-world .landscape{width:100%;left:0;bottom:0;height:72%;mask-image:none}
+.arena-world .sun-disc{top:19%;left:46%;width:150px;height:150px}
+.arena-world .scene-center,.arena-world .grass,.arena-world .damage-number,.arena-world .pal-sword-trail,.arena-world .pal-location,.arena-world .pal-status-strip,.arena-world .voxel-biome,.arena-world .voxel-crosshair,.arena-world .voxel-scene-note{display:none}
+.arena-world .player-character{left:20%;width:190px;bottom:calc(var(--dock-height) + 42px)}
+.arena-world .monster-character{right:18%;width:225px;bottom:calc(var(--dock-height) + 42px)}
+.arena-world .attack,.arena-world .hurt,.arena-world .pal-attack,.arena-world .pal-hurt,.arena-world .voxel-attack,.arena-world .voxel-hurt{animation:none!important}
+.arena-world .pal-scene{--pal-scale:2.5;background-size:cover;background-position:center}
+.arena-world .pal-enemy{left:25%;bottom:calc(var(--dock-height) + 70px)}
+.arena-world .pal-leader{right:18%;bottom:calc(var(--dock-height) + 35px)}
+.arena-world .pal-companion-one{right:27%;bottom:calc(var(--dock-height) + 140px)}
+.arena-world .pal-companion-two{right:35%;bottom:calc(var(--dock-height) + 60px)}
+.arena-world .voxel-player{left:24%;bottom:calc(var(--dock-height) + 48px);scale:1.25}
+.arena-world .voxel-monster{right:24%;bottom:calc(var(--dock-height) + 48px);scale:1.25}
+.arena-world .voxel-ground{height:calc(var(--dock-height) + 42px)}
+.arena-world .voxel-tree{bottom:calc(var(--dock-height) + 40px);scale:1.4;transform-origin:bottom center}
+.arena-world .voxel-tree.tree-2,.arena-world .voxel-tree.tree-3{bottom:calc(var(--dock-height) + 130px)}
+.arena-world .voxel-flower{bottom:calc(var(--dock-height) + 40px)}
+.arena-world .voxel-cloud{top:20%;animation:arena-cloud 18s ease-in-out infinite alternate}
+.arena-world .cloud{animation:arena-cloud 18s ease-in-out infinite alternate}
+.arena-shade{background:linear-gradient(#15271b25,transparent 32%,transparent 60%,#15271b25)}
+.arena-top{position:absolute;top:0;left:24px;right:24px;z-index:5}
+.arena-top .game-header{height:70px;max-width:none;border:0;margin:0;padding:0}
+.arena-route{display:flex;align-items:center;gap:12px;color:var(--arena-ink)}
+.arena-route>button{rotate:180deg;color:inherit}
+.arena-route strong{font-size:15px;font-weight:600}.arena-route small{display:block;font-size:11px;margin-top:4px;opacity:.75}
+.arena-top .hud{background:var(--arena-panel);padding:8px 15px;border-radius:var(--arena-radius);gap:22px}
+.arena-status{position:absolute;top:82px;left:32px;right:32px;z-index:4;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:22px}
+.arena-status .fighter-health{position:static;width:100%;max-width:340px;padding:12px 16px;background:var(--arena-panel);border:1px solid var(--arena-border);border-radius:var(--arena-radius);box-shadow:0 4px 15px #122a1720}
+.arena-status .monster-health{justify-self:end}
+.arena-status .fighter-health b{font-size:13px;color:var(--arena-ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:12px}
+.arena-status .fighter-health span,.arena-status .fighter-health em{color:var(--arena-ink);white-space:nowrap}
+.arena-status .health-track{height:8px;background:#20372640}.arena-status .health-track>span{background:#85ab5d}
+.arena-status .monster-health .health-track>span{background:#cf8259}
+.arena-round{display:grid;gap:6px;text-align:center;color:var(--arena-ink);text-shadow:0 1px 8px var(--arena-panel)}
+.arena-round>span{font:10px monospace;letter-spacing:3px}.arena-round>b{font-size:18px}
+.arena-dock{position:absolute;bottom:16px;left:24px;right:24px;height:var(--dock-height);z-index:12;display:grid;grid-template-rows:minmax(0,1fr) 58px;gap:8px;max-width:1200px;margin:auto}
+.arena-dock .arena-question.question-panel{min-height:0;max-width:none;width:100%;height:100%;margin:0;padding:0;border-radius:var(--arena-radius);border:1px solid var(--arena-border);background:#fffef7f5;box-shadow:0 8px 32px #172a2026;overflow:hidden}
+.arena-question-scroll{height:100%;overflow:auto;overscroll-behavior:contain;padding:16px 24px;scrollbar-width:thin;scrollbar-color:#92a17e transparent}
+.arena-question h2{font-size:18px;line-height:1.6;margin:10px 0 15px}
+.arena-question .question-meta,.arena-question .question-topic{font-size:11px}
+.arena-question .answer-options{gap:8px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.arena-question .answer-option{padding:10px 14px;min-height:46px;font-size:14px}
+.arena-question #written-answer{min-height:0;padding:10px 13px;font-size:14px}
+.arena-question textarea#written-answer{height:80px;resize:vertical;max-height:160px}
+.arena-question .answer-actions{margin-top:8px}.arena-question .primary-button{padding:10px 18px;font-size:13px}
+.arena-question .answer-feedback{margin:10px 0 0;padding:12px 16px}.arena-question .answer-feedback p{margin:7px 0;line-height:1.6}
+.arena-question .answer-feedback p,.arena-question .answer-feedback details,.arena-question .question-meta,.arena-question .question-topic,.arena-question .time-label{color:#596e4f}
+.arena-question .answer-feedback.negative p{color:#7c5543}
+.arena-question:has(.answer-feedback) .answer-options,.arena-question:has(.answer-feedback) #answer-form{display:none}
+.arena-question .loading-question{min-height:120px;padding:28px}
+.arena-controls{display:flex;align-items:center;gap:20px;padding:0 20px;background:var(--arena-panel);border:1px solid var(--arena-border);border-radius:var(--arena-radius);color:var(--arena-ink);box-shadow:0 4px 16px #15251b30}
+.arena-command-label{display:flex;gap:8px;align-items:center;white-space:nowrap;font-size:12px;min-width:110px}
+.arena-level{font:12px monospace;opacity:.7}
+.arena-controls .battle-tools{display:flex;justify-content:center;flex:1;margin:0;padding:0;border:0;gap:24px}
+.arena-controls .battle-tools button{color:var(--arena-ink);font-size:12px;gap:7px;margin:0;padding:8px}
+.arena-controls .pal-commands{flex:1;grid-template-columns:repeat(6,1fr);border:0;outline:0;box-shadow:none;padding:0;background:none;gap:8px}
+.arena-controls .pal-commands button{justify-content:center;padding:6px;gap:7px}
+[data-theme=pal] .arena-route,[data-theme=voxel] .arena-route{background:var(--arena-panel);padding:7px 12px;border-radius:var(--arena-radius)}
+[data-theme=pal] .arena-status .monster-health{order:1;justify-self:start}
+[data-theme=pal] .arena-status .arena-round{order:2}
+[data-theme=pal] .arena-status .player-health{order:3;justify-self:end}
+[data-theme=pal] .arena-dock .arena-question{background:#e5dec7f5;border:3px double #a4996e}
+[data-theme=voxel] .arena-dock .arena-question{background:#edf1d9f5;border:3px solid #91a478;box-shadow:inset 0 0 0 2px #ffffff80}
+[data-theme=voxel] .arena-controls,[data-theme=voxel] .arena-status .fighter-health{border-width:3px}
+.arena-effects{position:absolute;inset:0;pointer-events:none;z-index:10}
+.pal-impact-slash{position:absolute;width:115px;height:115px;translate:-50% -50%;opacity:0;border-right:12px solid #e7ffff;border-radius:50%;filter:drop-shadow(0 0 9px #93daff);pointer-events:none}
+.pal-impact-slash:after{content:'';position:absolute;inset:18px -14px;border-left:6px solid #fff4b0;border-radius:50%;rotate:65deg}
+.pal-impact-slash.guard{border:5px solid #9eeeff;background:#95e5ff33}
+.battle-arena[data-choreography] .pal-enemy{animation:none}
+.battle-arena:not([data-choreography])[data-outcome=""] .pal-enemy .pal-frames{animation:pal-ready-frames 1s steps(1,end) infinite}
+@keyframes pal-ready-frames{0%,100%{background-position:0% 0}50%{background-position:var(--idle-to) 0}}
+.arena-bolt,.arena-spark,.arena-damage{position:absolute;opacity:0;pointer-events:none}
+.arena-bolt{width:35px;height:35px;border-radius:50%;background:#fffde2;box-shadow:0 0 12px 5px #e3c85c,0 0 40px 13px #f3dc6960}
+.arena-bolt.hostile{background:#fff0dd;box-shadow:0 0 12px 5px #df7758,0 0 40px 13px #e68e6360}
+.arena-bolt.pal{width:65px;height:9px;rotate:-35deg;background:#fff;box-shadow:0 0 10px 6px #bbfaff}
+.arena-bolt.voxel{border-radius:0;width:24px;height:24px;box-shadow:8px 8px #afd55280,-8px -8px #e3f39880,0 0 22px #ddefa0}
+.arena-spark{width:7px;height:7px;border-radius:50%;background:#ffe99a;box-shadow:0 0 7px #fff3c7}.arena-spark.hostile{background:#f39270}
+[data-theme=voxel] .arena-spark{border-radius:0}
+.arena-damage{font:bold 32px monospace;color:#fff7c8;text-shadow:0 2px #71502b,2px 0 #71502b,-2px 0 #71502b,0 -2px #71502b;white-space:nowrap}
+.arena-outcome{position:absolute;top:24%;left:50%;translate:-50% 0;text-align:center;z-index:11;pointer-events:none;color:var(--arena-ink);text-shadow:0 2px 18px var(--arena-panel);animation:arena-victory .7s 1.3s both}
+.arena-outcome span{display:block;font-size:42px;font-weight:800;letter-spacing:8px;white-space:nowrap}.arena-outcome small{display:block;margin-top:10px;font-size:13px}
+.battle-arena[data-animating=false][data-outcome=win] :is(.monster-character,.pal-enemy,.voxel-monster){opacity:.18;scale:.7}
+.battle-arena[data-animating=false][data-outcome=lose] :is(.player-character,.pal-leader,.voxel-player){opacity:.35;rotate:-65deg;transform-origin:bottom center}
+.battle-arena[data-animating=false][data-outcome=lose] .pal-leader{rotate:0deg;opacity:.55}
+.battle-arena .modal-backdrop{position:absolute;padding:16px}
+.battle-arena .dialog{max-height:calc(100dvh - 32px)}
+.battle-arena .calculator-popover{position:absolute;right:24px;bottom:calc(var(--dock-height) + 28px);max-height:calc(100dvh - 100px);overflow:auto}
+.battle-arena #toast{position:absolute;bottom:calc(var(--dock-height) + 30px)}
+@keyframes arena-cloud{to{translate:30px 0}}
+@keyframes arena-victory{from{opacity:0;scale:.8;filter:blur(6px)}to{opacity:1;scale:1;filter:blur(0)}}
+@media(max-width:680px){
+ .battle-arena{--dock-height:clamp(285px,49dvh,430px)}
+ .arena-top{left:8px;right:8px}.arena-top .game-header{height:58px}.arena-route{gap:3px}.arena-route strong{font-size:11px}.arena-route small{font-size:9px}
+ .arena-top .hud{gap:9px;padding:5px 7px}.arena-top .hud-buttons{gap:2px}.arena-top .hud-buttons .icon-button{width:28px;height:30px}.arena-top .hud-xp{display:none}.arena-top .hud-level{font-size:9px}.arena-top .hud-level b{font-size:21px}
+ .arena-status{top:68px;left:10px;right:10px;gap:12px;grid-template-columns:1fr 1fr}.arena-round{display:none}
+ .arena-status .fighter-health{padding:9px 10px}.arena-status .fighter-health b{font-size:10px}.arena-status .fighter-health span{font-size:10px}.arena-status .health-track{height:6px}
+ .arena-dock{bottom:8px;left:8px;right:8px;grid-template-rows:minmax(0,1fr) 54px;gap:6px}.arena-question-scroll{padding:12px 14px}
+ .arena-question h2{font-size:15px;margin:10px 0}.arena-question .question-meta,.arena-question .question-topic{font-size:9px}.arena-question .bank-label{max-width:40%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .arena-question .answer-option{padding:8px;font-size:12px;min-height:42px}.arena-question .answer-option>span{width:22px;height:22px;flex-shrink:0}.arena-question .answer-actions>span{display:none}
+ .arena-controls{padding:0 6px;gap:0}.arena-command-label,.arena-level{display:none}.arena-controls .battle-tools{gap:3px;justify-content:space-around}.arena-controls .battle-tools button{gap:4px;padding:5px;font-size:11px}.arena-controls .battle-tools small{font-size:9px}
+ .arena-controls .pal-commands{gap:0}.arena-controls .pal-commands button{font-size:9px;gap:2px;padding:3px;flex-direction:column}.arena-controls .pal-commands button b{font-size:16px}
+ .arena-world .player-character{width:130px;left:9%;bottom:calc(var(--dock-height) + 26px)}.arena-world .monster-character{width:150px;right:5%;bottom:calc(var(--dock-height) + 26px)}
+ .arena-world .pal-scene{--pal-scale:1.4}.arena-world .pal-enemy{left:21%;bottom:calc(var(--dock-height) + 40px)}.arena-world .pal-leader{right:9%;bottom:calc(var(--dock-height) + 20px)}.arena-world .pal-companion-one{right:20%;bottom:calc(var(--dock-height) + 95px)}.arena-world .pal-companion-two{right:33%;bottom:calc(var(--dock-height) + 40px)}
+ .arena-world .voxel-player{left:12%;scale:.8;bottom:calc(var(--dock-height) + 28px)}.arena-world .voxel-monster{right:12%;scale:.8;bottom:calc(var(--dock-height) + 28px)}.arena-world .voxel-tree{scale:.8}
+ .arena-world .voxel-ground{height:calc(var(--dock-height) + 22px)}.arena-world .voxel-nameplate{display:none}
+ .arena-outcome{top:23%}.arena-outcome span{font-size:29px;letter-spacing:5px}
+ .battle-arena .calculator-popover{right:12px;bottom:calc(var(--dock-height) + 15px);max-height:calc(100dvh - var(--dock-height) - 80px)}
+}
+@media(max-height:560px) and (min-width:681px){
+ .battle-arena{--dock-height:0px}.arena-top{left:12px;right:12px}.arena-top .game-header{height:60px}.arena-top .hud{padding:5px 12px}
+ .arena-dock{left:auto;right:12px;bottom:12px;top:75px;width:50%;height:auto;grid-template-rows:minmax(0,1fr) 48px}.arena-status{left:12px;right:auto;width:44%;top:78px;grid-template-columns:1fr 1fr;gap:8px}.arena-round{display:none}.arena-status .fighter-health{padding:8px}.arena-status .fighter-health b{font-size:10px}
+ .arena-question-scroll{padding:12px}.arena-question h2{font-size:14px}.arena-question .answer-option{font-size:12px;padding:8px}.arena-question .question-meta,.arena-question .question-topic{font-size:9px}.arena-controls{padding:0 6px}.arena-command-label,.arena-level{display:none}.arena-controls .battle-tools{gap:5px}.arena-controls .battle-tools button{padding:4px;font-size:10px}.arena-controls .pal-commands{gap:0}.arena-controls .pal-commands button{font-size:9px;padding:2px;flex-direction:column;gap:1px}.arena-controls .pal-commands button b{font-size:15px}
+ .arena-world .player-character{left:3%;width:125px;bottom:30px}.arena-world .monster-character{left:28%;right:auto;width:145px;bottom:35px}
+ .arena-world .pal-scene{--pal-scale:1.4}.arena-world .pal-enemy{left:11%;bottom:80px}.arena-world .pal-leader{right:auto;left:34%;bottom:35px}.arena-world .pal-companion-one{right:auto;left:29%;bottom:155px}.arena-world .pal-companion-two{right:auto;left:23%;bottom:100px}
+ .arena-world .voxel-player{left:5%;scale:.8;bottom:42px}.arena-world .voxel-monster{left:30%;right:auto;scale:.8;bottom:42px}.arena-world .voxel-ground{height:37px}
+ .arena-outcome{left:24%;top:37%}.arena-outcome span{font-size:26px}.battle-arena .calculator-popover{left:12px;right:auto;bottom:12px;max-height:calc(100dvh - 82px)}
+}
+@media(prefers-reduced-motion:reduce){.battle-arena *{animation:none!important}.arena-outcome{opacity:1}}
+[data-motion=reduced] .battle-arena *{animation:none!important}
+
+/* Imported exam text keeps its paragraphs and mathematical typesetting inside the panel. */
+.arena-question #question-title,.arena-question .answer-option-text,.arena-question .answer-feedback p{white-space:pre-wrap;overflow-wrap:anywhere}
+.arena-question .answer-option>span.answer-option-text{display:block;flex:1;min-width:0;width:auto;height:auto;border-radius:0;background:none;color:inherit;text-align:left;font:inherit;padding:0}
+.arena-question .answer-option{align-items:flex-start}
+.question-math{display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:.35em .12em;vertical-align:middle;white-space:normal;letter-spacing:normal;word-spacing:normal;scrollbar-width:thin}
+.question-math .katex{font-size:1.1em}.question-math .katex-display{margin:.35em 0}
+.math-fallback{font-family:monospace;overflow-wrap:anywhere}
+.subject-button:disabled{opacity:.35;cursor:not-allowed}

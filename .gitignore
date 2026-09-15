@@ -1,0 +1,37 @@
+node_modules/
+.quest-web.pid
+.quest-web.log
+dist/
+artifacts/
+test-results/
+playwright-report/
+.DS_Store
+deepseek_apikey.txt
+*apikey*.txt
+*api_key*.txt
+.env
+.env.*
+data/
+accounts.json*
+*.log
+*.pid
+*.pem
+*.key
+*.p12
+*.pfx
+*.bak
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+
+# Personal screenshots and browser/session captures.
+/other/
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+
+# Proprietary PAL originals AND extracted images/music stay local.
+pal/
+/public/themes/pal/

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "my-practice",
+  "name": "我的练习题库",
+  "description": "初中数学示例：角度与三角形。",
+  "source": {"name": "自编题", "license": "自有内容"},
+  "questions": [
+    {
+      "id": "triangle-choice-1",
+      "subject": "math",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": ["easy", "normal", "hard"],
+      "knowledgePoint": {"id": "math:三角形内角和", "name": "三角形内角和"},
+      "text": "三角形三个内角的和是多少？",
+      "options": ["90°", "180°", "270°", "360°"],
+      "answer": "180°",
+      "explanation": "在平面欧氏几何中，三角形的内角和为 180°。",
+      "hint": "想一想，把三角形的三个角拼在一起，会形成什么角？"
+    },
+    {
+      "id": "triangle-fill-1",
+      "subject": "math",
+      "grade": 1,
+      "type": "fill",
+      "difficulties": ["easy", "normal", "hard"],
+      "knowledgePoint": {"id": "math:三角形内角和", "name": "三角形内角和"},
+      "text": "一个三角形有两个角分别为 50° 和 60°，第三个角是多少度？只填写数字。",
+      "answer": "70",
+      "explanation": "180 − 50 − 60 = 70，第三个角为 70°。",
+      "hint": "从内角和中减去两个已知角。"
+    },
+    {
+      "id": "triangle-short-1",
+      "subject": "math",
+      "grade": 1,
+      "type": "short",
+      "difficulties": ["normal", "hard"],
+      "knowledgePoint": {"id": "math:三角形内角和", "name": "三角形内角和"},
+      "text": "一个三角形能有两个直角吗？请说明理由。",
+      "rubric": "不能。两个直角已经占 180°，第三个角将为 0°，不能形成三角形。须有判断和合理解释。",
+      "hint": "两个直角的度数相加后，还给第三个角留下了多少？"
+    },
+    {
+      "id": "triangle-open-1",
+      "subject": "math",
+      "grade": 1,
+      "type": "open",
+      "difficulties": ["easy", "normal", "hard"],
+      "knowledgePoint": {"id": "math:几何探究", "name": "几何探究"},
+      "text": "设计一个可以在家里完成的小活动，向家人说明三角形内角和为 180°。描述材料、步骤和观察。",
+      "rubric": "可用纸、折叠、剪拼、测量等；活动可操作，说明三个内角可以组成平角。允许不同设计。若采用测量，应允许误差，不能把一次测量当作严格证明。",
+      "hint": "可以先在纸上画一个三角形，把三个角标上不同颜色。"
+    }
+  ]
+}

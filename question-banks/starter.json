@@ -1,0 +1,2535 @@
+{
+  "schemaVersion": 1,
+  "id": "starter",
+  "name": "学科冒险 · 基础题库",
+  "description": "六学科、三个学段，选择 / 填空 / 简答 / 开放题；数学另有参数化出题。",
+  "source": {
+    "name": "本项目原创整理",
+    "license": "项目内使用"
+  },
+  "questions": [
+    {
+      "id": "starter-chinese-0-0",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:古诗积累",
+        "name": "古诗积累"
+      },
+      "text": "“床前明月光”的下一句是？",
+      "answer": "疑是地上霜",
+      "options": [
+        "疑是地上霜",
+        "低头思故乡",
+        "举头望明月",
+        "春眠不觉晓"
+      ],
+      "explanation": "李白《静夜思》：床前明月光，疑是地上霜。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-0-1",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:词语辨析",
+        "name": "词语辨析"
+      },
+      "text": "“高兴”的近义词是？",
+      "answer": "开心",
+      "options": [
+        "开心",
+        "难过",
+        "生气",
+        "紧张"
+      ],
+      "explanation": "“开心”和“高兴”都表示愉快的心情。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-0-2",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:成语寓意",
+        "name": "成语寓意"
+      },
+      "text": "“画蛇添足”告诉我们什么道理？",
+      "answer": "多此一举反而坏事",
+      "options": [
+        "多此一举反而坏事",
+        "做事要快",
+        "画画要仔细",
+        "遇事要坚持"
+      ],
+      "explanation": "给蛇画上脚是多余的，比喻做多余的事反而不恰当。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-0-3",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:名言积累",
+        "name": "名言积累"
+      },
+      "text": "“千里之行”的下一句是？",
+      "answer": "始于足下",
+      "options": [
+        "始于足下",
+        "更上一层楼",
+        "百尺竿头",
+        "学无止境"
+      ],
+      "explanation": "“千里之行，始于足下”告诉我们做事要从眼前的一步开始。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-0-4",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:修辞手法",
+        "name": "修辞手法"
+      },
+      "text": "“一片冰心在玉壶”使用了哪种修辞？",
+      "answer": "比喻",
+      "options": [
+        "比喻",
+        "排比",
+        "拟人",
+        "反问"
+      ],
+      "explanation": "用“冰心”“玉壶”比喻纯洁、正直的品格。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-1-0",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:儒家经典",
+        "name": "儒家经典"
+      },
+      "text": "“学而不思则罔，思而不学则殆”出自？",
+      "answer": "《论语》",
+      "options": [
+        "《论语》",
+        "《孟子》",
+        "《庄子》",
+        "《史记》"
+      ],
+      "explanation": "出自《论语·为政》，强调学习和思考相结合。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-1-1",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:词类活用",
+        "name": "词类活用"
+      },
+      "text": "“春风又绿江南岸”中“绿”的用法是？",
+      "answer": "形容词用作动词",
+      "options": [
+        "形容词用作动词",
+        "名词用作动词",
+        "动词用作名词",
+        "数量词用作名词"
+      ],
+      "explanation": "“绿”意为“使……变绿”，生动描写春风带来的变化。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-1-2",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:诗词意象",
+        "name": "诗词意象"
+      },
+      "text": "“但愿人长久，千里共婵娟”中的“婵娟”指？",
+      "answer": "月亮",
+      "options": [
+        "月亮",
+        "美酒",
+        "花朵",
+        "星星"
+      ],
+      "explanation": "苏轼在这里用“婵娟”指代美好的月亮，寄托团圆的愿望。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-1-3",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:散文常识",
+        "name": "散文常识"
+      },
+      "text": "《背影》的作者是？",
+      "answer": "朱自清",
+      "options": [
+        "朱自清",
+        "鲁迅",
+        "老舍",
+        "冰心"
+      ],
+      "explanation": "《背影》是朱自清的散文，描写父亲为自己买橘子的情景。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-1-4",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:送别诗",
+        "name": "送别诗"
+      },
+      "text": "“海内存知己，天涯若比邻”表达什么情感？",
+      "answer": "对友人的深厚情谊",
+      "options": [
+        "对友人的深厚情谊",
+        "思念故乡",
+        "忧国忧民",
+        "赞美春光"
+      ],
+      "explanation": "王勃的这两句诗表达友情不会因为距离遥远而疏淡。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-2-0",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:文言句式",
+        "name": "文言句式"
+      },
+      "text": "“师者，所以传道受业解惑也”属于什么句式？",
+      "answer": "判断句",
+      "options": [
+        "判断句",
+        "被动句",
+        "倒装句",
+        "省略句"
+      ],
+      "explanation": "“……者，……也”是典型的文言判断句式。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-2-1",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:唐诗作家",
+        "name": "唐诗作家"
+      },
+      "text": "《琵琶行》的作者是？",
+      "answer": "白居易",
+      "options": [
+        "白居易",
+        "李商隐",
+        "杜牧",
+        "柳宗元"
+      ],
+      "explanation": "白居易创作《琵琶行》，名句有“同是天涯沦落人”。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-2-2",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:情景交融",
+        "name": "情景交融"
+      },
+      "text": "“一切景语皆情语”强调了什么关系？",
+      "answer": "景物描写与情感表达",
+      "options": [
+        "景物描写与情感表达",
+        "时间与空间",
+        "人物与情节",
+        "押韵与节奏"
+      ],
+      "explanation": "王国维强调文学中的景物描写往往承载作者的情感。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-2-3",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:诸子散文",
+        "name": "诸子散文"
+      },
+      "text": "《逍遥游》的作者是？",
+      "answer": "庄子",
+      "options": [
+        "庄子",
+        "孔子",
+        "韩非子",
+        "荀子"
+      ],
+      "explanation": "《逍遥游》出自《庄子》，表达追求精神自由的思想。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-2-4",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:劝学思想",
+        "name": "劝学思想"
+      },
+      "text": "“不积跬步，无以至千里”出自？",
+      "answer": "《劝学》",
+      "options": [
+        "《劝学》",
+        "《师说》",
+        "《赤壁赋》",
+        "《阿房宫赋》"
+      ],
+      "explanation": "荀子的《劝学》强调学习需要不断积累。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-0-0",
+      "subject": "english",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:基础词汇",
+        "name": "基础词汇"
+      },
+      "text": "“苹果”的英文是？",
+      "answer": "apple",
+      "options": [
+        "apple",
+        "orange",
+        "banana",
+        "grape"
+      ],
+      "explanation": "Apple 是苹果，orange 是橙子，banana 是香蕉。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-0-1",
+      "subject": "english",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:基础句式",
+        "name": "基础句式"
+      },
+      "text": "选择正确的句子：",
+      "answer": "I am a student.",
+      "options": [
+        "I am a student.",
+        "I is a student.",
+        "I are a student.",
+        "I be a student."
+      ],
+      "explanation": "第一人称单数 I 与 am 搭配。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-0-2",
+      "subject": "english",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:人称代词",
+        "name": "人称代词"
+      },
+      "text": "“She” 表示什么？",
+      "answer": "她",
+      "options": [
+        "她",
+        "他",
+        "它",
+        "他们"
+      ],
+      "explanation": "She 指“她”，he 指“他”，it 指“它”。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-0-3",
+      "subject": "english",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:礼貌表达",
+        "name": "礼貌表达"
+      },
+      "text": "“谢谢你”的英文是？",
+      "answer": "Thank you.",
+      "options": [
+        "Thank you.",
+        "Goodbye.",
+        "Good morning.",
+        "Sorry."
+      ],
+      "explanation": "Thank you 用于表达感谢。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-0-4",
+      "subject": "english",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:英文数字",
+        "name": "英文数字"
+      },
+      "text": "One + two = ____",
+      "answer": "three",
+      "options": [
+        "three",
+        "four",
+        "five",
+        "six"
+      ],
+      "explanation": "One 是一，two 是二，一加二等于 three（三）。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-1-0",
+      "subject": "english",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:一般现在时",
+        "name": "一般现在时"
+      },
+      "text": "She ____ to school by bike every day.",
+      "answer": "goes",
+      "options": [
+        "goes",
+        "go",
+        "going",
+        "gone"
+      ],
+      "explanation": "一般现在时中，主语 She 是第三人称单数，动词用 goes。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-1-1",
+      "subject": "english",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:There be 句型",
+        "name": "There be 句型"
+      },
+      "text": "There ____ some water in the bottle.",
+      "answer": "is",
+      "options": [
+        "is",
+        "are",
+        "be",
+        "were"
+      ],
+      "explanation": "Water 是不可数名词，此处用 is。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-1-2",
+      "subject": "english",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:完成时与 since",
+        "name": "完成时与 since"
+      },
+      "text": "I have lived here ____ 2020.",
+      "answer": "since",
+      "options": [
+        "since",
+        "for",
+        "in",
+        "at"
+      ],
+      "explanation": "Since 后接起始时间点；for 后接一段时间。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-1-3",
+      "subject": "english",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:一般过去时",
+        "name": "一般过去时"
+      },
+      "text": "Yesterday we ____ a movie.",
+      "answer": "watched",
+      "options": [
+        "watched",
+        "watch",
+        "watches",
+        "watching"
+      ],
+      "explanation": "Yesterday 表示过去时间，这里使用一般过去时 watched。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-1-4",
+      "subject": "english",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:形容词比较级",
+        "name": "形容词比较级"
+      },
+      "text": "This book is ____ than that one.",
+      "answer": "more interesting",
+      "options": [
+        "more interesting",
+        "most interesting",
+        "interesting",
+        "the interesting"
+      ],
+      "explanation": "Than 表示比较，interesting 的比较级是 more interesting。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-2-0",
+      "subject": "english",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:虚拟语气",
+        "name": "虚拟语气"
+      },
+      "text": "If I ____ you, I would accept the offer.",
+      "answer": "were",
+      "options": [
+        "were",
+        "am",
+        "was being",
+        "have been"
+      ],
+      "explanation": "与现在事实相反的虚拟语气，if 从句中的 be 通常用 were。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-2-1",
+      "subject": "english",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:定语从句",
+        "name": "定语从句"
+      },
+      "text": "The book ____ cover is blue belongs to me.",
+      "answer": "whose",
+      "options": [
+        "whose",
+        "which",
+        "who",
+        "whom"
+      ],
+      "explanation": "Whose 表示所属关系，在定语从句中修饰 cover。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-2-2",
+      "subject": "english",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:倒装与连词",
+        "name": "倒装与连词"
+      },
+      "text": "Hardly had I arrived ____ it started raining.",
+      "answer": "when",
+      "options": [
+        "when",
+        "than",
+        "that",
+        "while"
+      ],
+      "explanation": "Hardly ... when ... 表示“一……就……”。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-2-3",
+      "subject": "english",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:主谓一致",
+        "name": "主谓一致"
+      },
+      "text": "Not only he but also I ____ responsible.",
+      "answer": "am",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "explanation": "Not only ... but also ... 连接主语时，谓语通常遵循就近原则，与 I 搭配用 am。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-english-2-4",
+      "subject": "english",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:不定式被动",
+        "name": "不定式被动"
+      },
+      "text": "The meeting ____ tomorrow has been cancelled.",
+      "answer": "to be held",
+      "options": [
+        "to be held",
+        "held yesterday",
+        "holding",
+        "being hold"
+      ],
+      "explanation": "To be held 是不定式的被动形式，表示计划在未来举行。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-0-0",
+      "subject": "history",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:古代发明",
+        "name": "古代发明"
+      },
+      "text": "中国古代的“四大发明”不包括？",
+      "answer": "蒸汽机",
+      "options": [
+        "蒸汽机",
+        "造纸术",
+        "指南针",
+        "印刷术"
+      ],
+      "explanation": "四大发明是造纸术、印刷术、火药、指南针。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-0-1",
+      "subject": "history",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:历史人物",
+        "name": "历史人物"
+      },
+      "text": "端午节的传说常与哪位诗人有关？",
+      "answer": "屈原",
+      "options": [
+        "屈原",
+        "李白",
+        "杜甫",
+        "白居易"
+      ],
+      "explanation": "纪念屈原是端午节广为流传的起源传说之一。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-0-2",
+      "subject": "history",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:秦朝统一",
+        "name": "秦朝统一"
+      },
+      "text": "秦始皇统一六国后建立了哪个朝代？",
+      "answer": "秦朝",
+      "options": [
+        "秦朝",
+        "汉朝",
+        "唐朝",
+        "宋朝"
+      ],
+      "explanation": "公元前 221 年，秦始皇统一六国，建立秦朝。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-0-3",
+      "subject": "history",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:古代书写",
+        "name": "古代书写"
+      },
+      "text": "古代在纸发明之前，人们常在什么上写字？",
+      "answer": "竹简",
+      "options": [
+        "竹简",
+        "塑料板",
+        "显示屏",
+        "橡皮"
+      ],
+      "explanation": "竹简和木牍是古代常见的书写材料。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-0-4",
+      "subject": "history",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:唐代文化",
+        "name": "唐代文化"
+      },
+      "text": "“诗仙”通常指哪位诗人？",
+      "answer": "李白",
+      "options": [
+        "李白",
+        "杜甫",
+        "王维",
+        "陶渊明"
+      ],
+      "explanation": "李白被称为“诗仙”，杜甫被称为“诗圣”。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-1-0",
+      "subject": "history",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:朝代与统一",
+        "name": "朝代与统一"
+      },
+      "text": "中国第一个统一的多民族封建国家是？",
+      "answer": "秦朝",
+      "options": [
+        "秦朝",
+        "夏朝",
+        "商朝",
+        "周朝"
+      ],
+      "explanation": "公元前 221 年，秦朝建立了统一的多民族封建国家。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-1-1",
+      "subject": "history",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:贞观之治",
+        "name": "贞观之治"
+      },
+      "text": "“贞观之治”对应哪位皇帝？",
+      "answer": "唐太宗",
+      "options": [
+        "唐太宗",
+        "唐高祖",
+        "唐玄宗",
+        "宋太祖"
+      ],
+      "explanation": "唐太宗李世民在位期间，出现了“贞观之治”。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-1-2",
+      "subject": "history",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:丝绸之路",
+        "name": "丝绸之路"
+      },
+      "text": "丝绸之路开辟与谁出使西域有关？",
+      "answer": "张骞",
+      "options": [
+        "张骞",
+        "郑和",
+        "玄奘",
+        "鉴真"
+      ],
+      "explanation": "西汉张骞出使西域，促进了汉朝与西域的交流。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-1-3",
+      "subject": "history",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:海上交流",
+        "name": "海上交流"
+      },
+      "text": "郑和下西洋发生在哪个朝代？",
+      "answer": "明朝",
+      "options": [
+        "明朝",
+        "唐朝",
+        "宋朝",
+        "清朝"
+      ],
+      "explanation": "明朝郑和率领船队多次远航，促进了中外交流。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-1-4",
+      "subject": "history",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:史学著作",
+        "name": "史学著作"
+      },
+      "text": "《史记》的作者是？",
+      "answer": "司马迁",
+      "options": [
+        "司马迁",
+        "司马光",
+        "班固",
+        "陈寿"
+      ],
+      "explanation": "西汉司马迁编写《史记》，是中国第一部纪传体通史。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-2-0",
+      "subject": "history",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:工业革命",
+        "name": "工业革命"
+      },
+      "text": "英国工业革命最早开始于哪个行业？",
+      "answer": "棉纺织业",
+      "options": [
+        "棉纺织业",
+        "钢铁业",
+        "电力业",
+        "汽车业"
+      ],
+      "explanation": "18 世纪英国工业革命首先从棉纺织业开始。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-2-1",
+      "subject": "history",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:辛亥革命",
+        "name": "辛亥革命"
+      },
+      "text": "辛亥革命发生于哪一年？",
+      "answer": "1911 年",
+      "options": [
+        "1911 年",
+        "1840 年",
+        "1898 年",
+        "1919 年"
+      ],
+      "explanation": "辛亥革命发生于 1911 年，推动了中国君主专制制度的结束。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-2-2",
+      "subject": "history",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:文艺复兴",
+        "name": "文艺复兴"
+      },
+      "text": "文艺复兴的核心思想是？",
+      "answer": "人文主义",
+      "options": [
+        "人文主义",
+        "重商主义",
+        "理性主义至上",
+        "封建神学"
+      ],
+      "explanation": "人文主义强调人的价值与尊严，是文艺复兴的核心思想。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-2-3",
+      "subject": "history",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:马克思主义",
+        "name": "马克思主义"
+      },
+      "text": "《共产党宣言》发表于哪一年？",
+      "answer": "1848 年",
+      "options": [
+        "1848 年",
+        "1789 年",
+        "1917 年",
+        "1921 年"
+      ],
+      "explanation": "马克思和恩格斯于 1848 年发表《共产党宣言》。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-history-2-4",
+      "subject": "history",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:新航路开辟",
+        "name": "新航路开辟"
+      },
+      "text": "新航路开辟对世界联系的主要影响是？",
+      "answer": "各大洲联系日益密切",
+      "options": [
+        "各大洲联系日益密切",
+        "各洲完全隔绝",
+        "海上贸易全部停止",
+        "工业革命立即完成"
+      ],
+      "explanation": "新航路开辟加强了各大洲之间的贸易和人员往来。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-0-0",
+      "subject": "geography",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:四大洋",
+        "name": "四大洋"
+      },
+      "text": "地球表面面积最大的大洋是？",
+      "answer": "太平洋",
+      "options": [
+        "太平洋",
+        "大西洋",
+        "印度洋",
+        "北冰洋"
+      ],
+      "explanation": "太平洋是世界上面积最大、深度最大的大洋。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-0-1",
+      "subject": "geography",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:方向辨认",
+        "name": "方向辨认"
+      },
+      "text": "太阳通常从哪个方向升起？",
+      "answer": "东方",
+      "options": [
+        "东方",
+        "西方",
+        "北方",
+        "南方"
+      ],
+      "explanation": "由于地球自西向东自转，我们看到太阳从东方升起。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-0-2",
+      "subject": "geography",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:中国首都",
+        "name": "中国首都"
+      },
+      "text": "中国的首都是？",
+      "answer": "北京",
+      "options": [
+        "北京",
+        "上海",
+        "广州",
+        "西安"
+      ],
+      "explanation": "北京是中华人民共和国的首都。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-0-3",
+      "subject": "geography",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:时间单位",
+        "name": "时间单位"
+      },
+      "text": "一天通常分为多少小时？",
+      "answer": "24 小时",
+      "options": [
+        "24 小时",
+        "12 小时",
+        "30 小时",
+        "60 小时"
+      ],
+      "explanation": "通常一天有 24 小时，一小时有 60 分钟。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-0-4",
+      "subject": "geography",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:降水现象",
+        "name": "降水现象"
+      },
+      "text": "下列哪一种是降水现象？",
+      "answer": "下雪",
+      "options": [
+        "下雪",
+        "刮风",
+        "地震",
+        "日出"
+      ],
+      "explanation": "雪和雨都属于从大气降落到地面的水，属于降水。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-1-0",
+      "subject": "geography",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:地球自转",
+        "name": "地球自转"
+      },
+      "text": "地球自转产生的主要现象是？",
+      "answer": "昼夜更替",
+      "options": [
+        "昼夜更替",
+        "四季变化",
+        "五带划分",
+        "昼夜长短的季节变化"
+      ],
+      "explanation": "地球自转造成昼夜更替，公转和地轴倾斜带来四季变化。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-1-1",
+      "subject": "geography",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:七大洲",
+        "name": "七大洲"
+      },
+      "text": "世界上面积最大的洲是？",
+      "answer": "亚洲",
+      "options": [
+        "亚洲",
+        "非洲",
+        "欧洲",
+        "北美洲"
+      ],
+      "explanation": "亚洲是七大洲中面积最大、人口最多的洲。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-1-2",
+      "subject": "geography",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:等高线",
+        "name": "等高线"
+      },
+      "text": "地图上通常用什么表示山地的高度？",
+      "answer": "等高线",
+      "options": [
+        "等高线",
+        "经线",
+        "纬线",
+        "国界线"
+      ],
+      "explanation": "等高线连接海拔相同的地点，可以反映地形起伏。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-1-3",
+      "subject": "geography",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:纬线与半球",
+        "name": "纬线与半球"
+      },
+      "text": "划分南北半球的界线是？",
+      "answer": "赤道",
+      "options": [
+        "赤道",
+        "本初子午线",
+        "北回归线",
+        "南极圈"
+      ],
+      "explanation": "赤道是 0° 纬线，把地球划分为南、北半球。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-1-4",
+      "subject": "geography",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:中国地势",
+        "name": "中国地势"
+      },
+      "text": "我国地势的总体特征是？",
+      "answer": "西高东低",
+      "options": [
+        "西高东低",
+        "东高西低",
+        "南高北低",
+        "中间低四周高"
+      ],
+      "explanation": "我国地势西高东低，大致呈三级阶梯分布。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-2-0",
+      "subject": "geography",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:地转偏向力",
+        "name": "地转偏向力"
+      },
+      "text": "北半球近地面的风向受地转偏向力影响会？",
+      "answer": "向右偏转",
+      "options": [
+        "向右偏转",
+        "向左偏转",
+        "始终向北",
+        "不发生偏转"
+      ],
+      "explanation": "地转偏向力使北半球运动物体向右偏，南半球向左偏。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-2-1",
+      "subject": "geography",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:地中海气候",
+        "name": "地中海气候"
+      },
+      "text": "地中海气候的典型特征是？",
+      "answer": "夏季炎热干燥，冬季温和多雨",
+      "options": [
+        "夏季炎热干燥，冬季温和多雨",
+        "全年高温多雨",
+        "全年寒冷干燥",
+        "夏季多雨，冬季干燥"
+      ],
+      "explanation": "地中海气候夏季受副热带高压控制，冬季受西风带影响。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-2-2",
+      "subject": "geography",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:岩石类型",
+        "name": "岩石类型"
+      },
+      "text": "岩浆冷却凝固形成什么岩石？",
+      "answer": "岩浆岩",
+      "options": [
+        "岩浆岩",
+        "沉积岩",
+        "变质岩",
+        "石灰岩"
+      ],
+      "explanation": "岩浆冷却凝固形成岩浆岩，如花岗岩、玄武岩。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-2-3",
+      "subject": "geography",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:河流地貌",
+        "name": "河流地貌"
+      },
+      "text": "形成三角洲的主要外力作用是？",
+      "answer": "流水堆积",
+      "options": [
+        "流水堆积",
+        "风力侵蚀",
+        "冰川侵蚀",
+        "海浪侵蚀"
+      ],
+      "explanation": "河流入海时流速降低，泥沙堆积，可能形成三角洲。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-geography-2-4",
+      "subject": "geography",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:城市热岛",
+        "name": "城市热岛"
+      },
+      "text": "城市中心气温常高于郊区，这叫？",
+      "answer": "热岛效应",
+      "options": [
+        "热岛效应",
+        "温室气体消失",
+        "逆温必然发生",
+        "臭氧空洞"
+      ],
+      "explanation": "城市下垫面、人工排热等因素使城区气温偏高，称为城市热岛效应。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-0-0",
+      "subject": "physics",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:磁性材料",
+        "name": "磁性材料"
+      },
+      "text": "下列哪种物体通常能被磁铁吸引？",
+      "answer": "铁钉",
+      "options": [
+        "铁钉",
+        "木块",
+        "塑料尺",
+        "玻璃杯"
+      ],
+      "explanation": "铁等铁磁性材料可以被磁铁吸引。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-0-1",
+      "subject": "physics",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:沸点",
+        "name": "沸点"
+      },
+      "text": "水在标准大气压下的沸点是？",
+      "answer": "100°C",
+      "options": [
+        "100°C",
+        "0°C",
+        "50°C",
+        "200°C"
+      ],
+      "explanation": "在标准大气压下，水的沸点为 100°C。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-0-2",
+      "subject": "physics",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:光源",
+        "name": "光源"
+      },
+      "text": "下列哪种物体是光源？",
+      "answer": "点亮的灯泡",
+      "options": [
+        "点亮的灯泡",
+        "月亮",
+        "镜子",
+        "课本"
+      ],
+      "explanation": "光源能够自行发光，月亮和镜子只是反射光。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-0-3",
+      "subject": "physics",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:物态变化",
+        "name": "物态变化"
+      },
+      "text": "冰融化成水时需要？",
+      "answer": "吸收热量",
+      "options": [
+        "吸收热量",
+        "放出热量",
+        "质量增加",
+        "变成气体"
+      ],
+      "explanation": "冰熔化时吸收热量，从固态变为液态。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-0-4",
+      "subject": "physics",
+      "grade": 0,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:光的反射",
+        "name": "光的反射"
+      },
+      "text": "把手电筒照向镜子，可以观察到？",
+      "answer": "光的反射",
+      "options": [
+        "光的反射",
+        "声音传播",
+        "磁力产生",
+        "水的蒸发"
+      ],
+      "explanation": "光照到镜面后改变传播方向，这是光的反射。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-1-0",
+      "subject": "physics",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:速度公式",
+        "name": "速度公式"
+      },
+      "text": "速度的计算公式是？",
+      "answer": "v = s / t",
+      "options": [
+        "v = s / t",
+        "v = s × t",
+        "v = t / s",
+        "v = s + t"
+      ],
+      "explanation": "速度等于路程除以时间，常用单位是 m/s。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-1-1",
+      "subject": "physics",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:声音传播",
+        "name": "声音传播"
+      },
+      "text": "声音不能在哪种介质中传播？",
+      "answer": "真空",
+      "options": [
+        "真空",
+        "空气",
+        "水",
+        "钢铁"
+      ],
+      "explanation": "声音的传播需要介质，真空中没有传播声音的介质。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-1-2",
+      "subject": "physics",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:相互作用力",
+        "name": "相互作用力"
+      },
+      "text": "用力推墙，墙也对人施力，说明？",
+      "answer": "物体间力的作用是相互的",
+      "options": [
+        "物体间力的作用是相互的",
+        "力使物体一定运动",
+        "墙没有受到力",
+        "力只能接触产生"
+      ],
+      "explanation": "人推墙时，墙对人产生反作用力，体现力的相互性。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-1-3",
+      "subject": "physics",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:杠杆平衡",
+        "name": "杠杆平衡"
+      },
+      "text": "杠杆平衡时满足什么条件？",
+      "answer": "动力 × 动力臂 = 阻力 × 阻力臂",
+      "options": [
+        "动力 × 动力臂 = 阻力 × 阻力臂",
+        "动力一定等于阻力",
+        "动力臂一定等于阻力臂",
+        "动力与阻力方向必须相同"
+      ],
+      "explanation": "杠杆平衡条件为 F₁l₁ = F₂l₂。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-1-4",
+      "subject": "physics",
+      "grade": 1,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:透镜",
+        "name": "透镜"
+      },
+      "text": "凸透镜可以对光起什么作用？",
+      "answer": "会聚作用",
+      "options": [
+        "会聚作用",
+        "发光作用",
+        "只吸收光",
+        "使光停止传播"
+      ],
+      "explanation": "凸透镜对光线有会聚作用，凹透镜对光线有发散作用。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-2-0",
+      "subject": "physics",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:牛顿第二定律",
+        "name": "牛顿第二定律"
+      },
+      "text": "质量为 2 kg 的物体加速度为 3 m/s²，合力为？",
+      "answer": "6 N",
+      "options": [
+        "6 N",
+        "1.5 N",
+        "5 N",
+        "12 N"
+      ],
+      "explanation": "根据牛顿第二定律 F = ma = 2 × 3 = 6 N。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-2-1",
+      "subject": "physics",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:欧姆定律",
+        "name": "欧姆定律"
+      },
+      "text": "电阻 4 Ω，通过电流 2 A，两端电压为？",
+      "answer": "8 V",
+      "options": [
+        "8 V",
+        "2 V",
+        "6 V",
+        "16 V"
+      ],
+      "explanation": "根据欧姆定律 U = IR = 2 × 4 = 8 V。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-2-2",
+      "subject": "physics",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:圆周运动",
+        "name": "圆周运动"
+      },
+      "text": "物体做匀速圆周运动时，保持不变的是？",
+      "answer": "速率",
+      "options": [
+        "速率",
+        "速度方向",
+        "加速度方向",
+        "合力方向"
+      ],
+      "explanation": "速率是速度的大小，匀速圆周运动中大小不变、方向变化。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-2-3",
+      "subject": "physics",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:动能",
+        "name": "动能"
+      },
+      "text": "动能的表达式是？",
+      "answer": "Eₖ = ½mv²",
+      "options": [
+        "Eₖ = ½mv²",
+        "Eₖ = mv",
+        "Eₖ = mgh",
+        "Eₖ = F/t"
+      ],
+      "explanation": "质量为 m、速度为 v 的物体，其动能为 ½mv²。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-physics-2-4",
+      "subject": "physics",
+      "grade": 2,
+      "type": "choice",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:自由落体",
+        "name": "自由落体"
+      },
+      "text": "自由落体运动中，忽略空气阻力时加速度？",
+      "answer": "保持不变",
+      "options": [
+        "保持不变",
+        "越来越大",
+        "越来越小",
+        "始终为零"
+      ],
+      "explanation": "在地球表面附近，自由落体的加速度近似为恒定的重力加速度 g。",
+      "hint": "回想相关知识，先找出题目里的关键词。"
+    },
+    {
+      "id": "starter-chinese-0-short",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:成语寓意",
+        "name": "成语寓意"
+      },
+      "text": "用自己的话说说“画蛇添足”是什么意思，并举一个小例子。",
+      "rubric": "解释多做了不必要的事反而把事情弄糟，并给出合理例子。",
+      "hint": "想一想：多做一步，真的一定更好吗？"
+    },
+    {
+      "id": "starter-chinese-0-open",
+      "subject": "chinese",
+      "grade": 0,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:想象表达",
+        "name": "想象表达"
+      },
+      "text": "如果你是一本会说话的书，你最想对小主人说什么？写两三句话。",
+      "rubric": "允许各种想象；以书的身份说话，表达清楚，内容与书或阅读有关即可，不要求固定句式。",
+      "hint": "你可以想象这本书的心情，以及它希望主人怎样对待它。"
+    },
+    {
+      "id": "starter-chinese-1-short",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:送别诗",
+        "name": "送别诗"
+      },
+      "text": "“海内存知己，天涯若比邻”表达了怎样的情感？用自己的话解释。",
+      "rubric": "说明真正的友谊不受空间距离阻隔，表达对友人的安慰、深情或积极乐观的送别态度。",
+      "hint": "注意“天涯”和“比邻”的对比。"
+    },
+    {
+      "id": "starter-chinese-1-open",
+      "subject": "chinese",
+      "grade": 1,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:阅读议论",
+        "name": "阅读议论"
+      },
+      "text": "你认为读纸质书和读电子书哪一种更适合自己？说明观点，并给出两个理由。",
+      "rubric": "立场任选；观点清楚，提供两个与自身体验或阅读特点相关的合理理由即可，不以选择哪一方判分。",
+      "hint": "可以从专注、便携、批注或眼睛舒适程度考虑。"
+    },
+    {
+      "id": "starter-chinese-2-short",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:劝学思想",
+        "name": "劝学思想"
+      },
+      "text": "荀子说“不积跬步，无以至千里”。这句话如何说明学习与积累的关系？",
+      "rubric": "准确解释微小行动积累成大成果，说明学习需要持续积累、坚持实践；可结合生活说明。",
+      "hint": "联系“微小的一步”与“遥远的目标”。"
+    },
+    {
+      "id": "starter-chinese-2-open",
+      "subject": "chinese",
+      "grade": 2,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "chinese:文学论证",
+        "name": "文学论证"
+      },
+      "text": "有人说“文学的价值在于提供答案”，也有人说“在于提出问题”。你怎么看？写一段有理由的论述。",
+      "rubric": "支持任一立场或综合立场均可；观点明确，理由与文学阅读相关，至少有一个具体例子或展开的论证，不按价值立场评分。",
+      "hint": "可以联系一部作品如何改变了你的思考。"
+    },
+    {
+      "id": "starter-math-0-short",
+      "subject": "math",
+      "grade": 0,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "math:平均分",
+        "name": "平均分"
+      },
+      "text": "小明有 12 支铅笔，平均分给 3 位同学。每人几支？请写出算式并说明理由。",
+      "rubric": "12÷3=4，每人4支。表达平均分或除法含义。",
+      "hint": "“平均分”意味着每份一样多。"
+    },
+    {
+      "id": "starter-math-0-open",
+      "subject": "math",
+      "grade": 0,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "math:乘法策略",
+        "name": "乘法策略"
+      },
+      "text": "用你喜欢的方法算 8 × 7，并告诉我你为什么这样算。",
+      "rubric": "结果56；接受连加、拆成8×5+8×2、7×4×2等正确方法；方法合理且解释与计算一致。",
+      "hint": "可以把一个较难的乘法拆成两个容易的乘法。"
+    },
+    {
+      "id": "starter-math-1-short",
+      "subject": "math",
+      "grade": 1,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "math:一元一次方程",
+        "name": "一元一次方程"
+      },
+      "text": "解方程 3x + 5 = 20，并说明每一步为什么成立。",
+      "rubric": "两边同时减5得到3x=15，再同时除3得到x=5；说明等式两边同做运算保持相等。",
+      "hint": "先去掉加上的数，再处理乘在 x 前的数。"
+    },
+    {
+      "id": "starter-math-1-open",
+      "subject": "math",
+      "grade": 1,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "math:百分比应用",
+        "name": "百分比应用"
+      },
+      "text": "一件商品先涨价 20%，再降价 20%。价格回到原价了吗？选一个原价，解释你的判断。",
+      "rubric": "没有回到原价，现价为原价96%；例如100→120→96；说明两次百分比计算的基数不同。",
+      "hint": "不妨假设原价是 100 元，逐步算一算。"
+    },
+    {
+      "id": "starter-math-2-short",
+      "subject": "math",
+      "grade": 2,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "math:完全平方公式",
+        "name": "完全平方公式"
+      },
+      "text": "为什么 (a + b)² 不等于 a² + b²？请展开说明，并举一个数值例子。",
+      "rubric": "展开为a²+2ab+b²，指出遗漏2ab；严格地说ab=0时相等，一般不等。给出正确的数值例子。",
+      "hint": "把平方写成两个相同括号相乘。"
+    },
+    {
+      "id": "starter-math-2-open",
+      "subject": "math",
+      "grade": 2,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "math:基本不等式",
+        "name": "基本不等式"
+      },
+      "text": "设计一种方法，说明“两个正数的和固定时，乘积在两数相等时最大”。可以用代数或图形解释。",
+      "rubric": "接受配方、基本不等式、差的平方非负、矩形面积等严谨解释；应有推理而不只是宣称结论。",
+      "hint": "设和为 s，其中一个数为 x，另一个数就可以用 s 和 x 表示。"
+    },
+    {
+      "id": "starter-english-0-short",
+      "subject": "english",
+      "grade": 0,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:自我介绍",
+        "name": "自我介绍"
+      },
+      "text": "用英语写两句话，介绍你的名字和喜欢的水果。可以使用虚构的名字。",
+      "rubric": "至少表达名字与喜欢的水果，例如My name is Alex. I like apples. 语意清楚，轻微拼写或大小写错误不苛责。",
+      "hint": "可以用 My name is ... 和 I like ... 开头。"
+    },
+    {
+      "id": "starter-english-0-open",
+      "subject": "english",
+      "grade": 0,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:英语对话",
+        "name": "英语对话"
+      },
+      "text": "如果你有一只会说英语的小动物，你想对它说什么？用英语写一两句话。",
+      "rubric": "内容开放，英文表达至少一个完整可理解的意思，与动物对话有关；不要求复杂词汇。",
+      "hint": "你可以问它的名字、问候它，或者邀请它一起玩。"
+    },
+    {
+      "id": "starter-english-1-short",
+      "subject": "english",
+      "grade": 1,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:一般过去时",
+        "name": "一般过去时"
+      },
+      "text": "把“I go to school by bike.”改写成昨天发生的事情，并说说你改了哪里。",
+      "rubric": "I went to school by bike yesterday. 将go变为过去式went，并加入yesterday；中英文解释均可。",
+      "hint": "过去的动作通常要改变动词形式。"
+    },
+    {
+      "id": "starter-english-1-open",
+      "subject": "english",
+      "grade": 1,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:爱好推荐",
+        "name": "爱好推荐"
+      },
+      "text": "用英语向新同学推荐一个课后爱好，写三四句话，说说它为什么有趣。",
+      "rubric": "提出一个爱好，给出相关理由，英语表达基本清楚连贯。允许少量语法或拼写错误，不要求唯一爱好。",
+      "hint": "可以用 You can try ... / I like it because ... 来组织。"
+    },
+    {
+      "id": "starter-english-2-short",
+      "subject": "english",
+      "grade": 2,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:虚拟语气",
+        "name": "虚拟语气"
+      },
+      "text": "解释“If I were you, I would accept the offer.”的含义，并说明为什么用 were。",
+      "rubric": "含义：如果我是你，我会接受这个提议；与现在事实相反的虚拟条件句，be用were，主句would+动词原形。",
+      "hint": "说话者是否真的能变成对方？"
+    },
+    {
+      "id": "starter-english-2-open",
+      "subject": "english",
+      "grade": 2,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "english:英语议论",
+        "name": "英语议论"
+      },
+      "text": "用英语写一段短文：Should students use AI tools for learning? 表达立场，并给出理由和一个注意事项。",
+      "rubric": "接受赞成、反对或有条件赞成；英语内容需有观点、合理理由和注意事项，语言清楚即可，轻微语言错误不掩盖内容质量。",
+      "hint": "可以考虑理解知识、独立思考、核实答案等方面。"
+    },
+    {
+      "id": "starter-history-0-short",
+      "subject": "history",
+      "grade": 0,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:古代发明",
+        "name": "古代发明"
+      },
+      "text": "说出中国古代四大发明中的两项，并说明其中一项能用来做什么。",
+      "rubric": "造纸术、印刷术、火药、指南针中任意两项，且至少一项用途解释正确。",
+      "hint": "想想书本、航海或古代的工具。"
+    },
+    {
+      "id": "starter-history-0-open",
+      "subject": "history",
+      "grade": 0,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:历史想象",
+        "name": "历史想象"
+      },
+      "text": "如果可以去古代参观一天，你想看看什么？说说你选择它的原因。",
+      "rubric": "选择与古代生活或历史相关的事物，给出合理原因；允许想象，不把虚构冒充确定史实即可。",
+      "hint": "可以从古人的衣食住行、发明或建筑中选择。"
+    },
+    {
+      "id": "starter-history-1-short",
+      "subject": "history",
+      "grade": 1,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:丝绸之路",
+        "name": "丝绸之路"
+      },
+      "text": "张骞出使西域有什么意义？请说明两个方面。",
+      "rubric": "了解西域、促进汉朝与西域联系、推动贸易和文化交流、为丝绸之路开通创造条件中任意两个合理方面。",
+      "hint": "既可以想到商品，也可以想到不同地区之间的联系。"
+    },
+    {
+      "id": "starter-history-1-open",
+      "subject": "history",
+      "grade": 1,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:丝路贸易",
+        "name": "丝路贸易"
+      },
+      "text": "假如你是丝绸之路上的商人，你会遇到什么机遇和困难？各举一例并解释。",
+      "rubric": "机遇可为贸易、文化交流等；困难可为长途、沙漠气候、安全、语言等；两方面都合理且有解释，不要求固定答案。",
+      "hint": "沿着地图想一想，远行会带来什么机会，又有什么挑战？"
+    },
+    {
+      "id": "starter-history-2-short",
+      "subject": "history",
+      "grade": 2,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:工业革命",
+        "name": "工业革命"
+      },
+      "text": "工业革命为何首先在英国发生？说出两个有联系的条件。",
+      "rubric": "可从资本、市场、劳动力、技术积累、资源、政治经济环境等解释，至少两个基本准确的因素。",
+      "hint": "技术之外，工厂还需要什么才能生产和销售？"
+    },
+    {
+      "id": "starter-history-2-open",
+      "subject": "history",
+      "grade": 2,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "history:工业社会",
+        "name": "工业社会"
+      },
+      "text": "评价工业革命对普通人生活的影响：说明一个积极变化和一个代价，并给出你的看法。",
+      "rubric": "正面可为生产效率、物质供给或交通改善；代价可为劳动条件、环境污染或贫富分化；避免单一绝对化评价，观点言之成理。",
+      "hint": "分别想想消费者、工人和城市居民的经历。"
+    },
+    {
+      "id": "starter-geography-0-short",
+      "subject": "geography",
+      "grade": 0,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:方向辨认",
+        "name": "方向辨认"
+      },
+      "text": "太阳通常从哪个方向升起、哪个方向落下？这能怎样帮助我们辨认方向？",
+      "rubric": "东升西落，并用早晨或傍晚太阳的位置说明大致判断方向；不要求精确正东正西。",
+      "hint": "观察早晨与傍晚的太阳位置。"
+    },
+    {
+      "id": "starter-geography-0-open",
+      "subject": "geography",
+      "grade": 0,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:地图要素",
+        "name": "地图要素"
+      },
+      "text": "你想给家附近的公园画地图，会画上哪三样东西？说说理由。",
+      "rubric": "提出至少三项合理地图要素或地物，如入口、道路、湖、游乐场、方向，解释有助辨认或找到路线。",
+      "hint": "想想第一次来公园的人最需要知道什么。"
+    },
+    {
+      "id": "starter-geography-1-short",
+      "subject": "geography",
+      "grade": 1,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:地球自转",
+        "name": "地球自转"
+      },
+      "text": "为什么地球上会有昼夜更替？请用自己的话解释。",
+      "rubric": "地球不透明、太阳照亮朝向太阳的一半，地球自转使同一地点交替朝向与背向太阳；核心必须提到自转。",
+      "hint": "把台灯当太阳，地球仪当地球，转一转。"
+    },
+    {
+      "id": "starter-geography-1-open",
+      "subject": "geography",
+      "grade": 1,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:自然环境",
+        "name": "自然环境"
+      },
+      "text": "学校准备在操场种树。你会考虑哪些自然条件？提出两点建议，并说明理由。",
+      "rubric": "任意两项合理因素，如日照、水分、气候、土壤、空间等，建议与当地条件适配并有解释；不能要求不存在的具体地点信息。",
+      "hint": "植物需要什么？同样的树适合所有地方吗？"
+    },
+    {
+      "id": "starter-geography-2-short",
+      "subject": "geography",
+      "grade": 2,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:地中海气候",
+        "name": "地中海气候"
+      },
+      "text": "地中海气候为什么夏季少雨、冬季多雨？",
+      "rubric": "夏季受副热带高压控制、下沉气流不易降水；冬季受西风带影响、带来水汽，降水增加。",
+      "hint": "联系气压带和风带的季节移动。"
+    },
+    {
+      "id": "starter-geography-2-open",
+      "subject": "geography",
+      "grade": 2,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "geography:城市热岛",
+        "name": "城市热岛"
+      },
+      "text": "为缓解城市热岛效应，设计两项措施，并解释其地理原理。",
+      "rubric": "可选增加绿地蒸散遮阴、透水或高反照率材料、减少人工排热、通风廊道等；至少两项合理措施且因果解释基本正确。",
+      "hint": "从热量来源、地表吸热和散热三个方向考虑。"
+    },
+    {
+      "id": "starter-physics-0-short",
+      "subject": "physics",
+      "grade": 0,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:物态变化",
+        "name": "物态变化"
+      },
+      "text": "冰为什么会在温暖的房间里慢慢变成水？说说你的理解。",
+      "rubric": "冰从较暖环境吸收热量发生熔化，从固态变成液态；不苛求专业术语。",
+      "hint": "冰和房间哪一个更冷？热量会怎样传递？"
+    },
+    {
+      "id": "starter-physics-0-open",
+      "subject": "physics",
+      "grade": 0,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:实验设计",
+        "name": "实验设计"
+      },
+      "text": "怎样做一个小实验，比较纸张和木板哪一个更容易弯曲？说说你的步骤。",
+      "rubric": "提出可操作比较，如同样支撑距离和受力，观察弯曲程度；鼓励公平比较和安全操作，不要求固定装置。",
+      "hint": "让比较尽可能公平：哪些条件应该保持相同？"
+    },
+    {
+      "id": "starter-physics-1-short",
+      "subject": "physics",
+      "grade": 1,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:声音传播",
+        "name": "声音传播"
+      },
+      "text": "为什么在真空中不能直接听到对方说话？",
+      "rubric": "声音由振动产生，传播需要介质；真空中没有传播声音所需的介质。",
+      "hint": "声音从一个地方传到另一个地方，需要什么？"
+    },
+    {
+      "id": "starter-physics-1-open",
+      "subject": "physics",
+      "grade": 1,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:振动与发声",
+        "name": "振动与发声"
+      },
+      "text": "设计一个实验，说明声音是由振动产生的。写出操作、观察和结论。",
+      "rubric": "音叉、水面、橡皮筋、鼓面等可行实验均可；描述发声时振动及观察，形成振动产生声音的合理结论。",
+      "hint": "有没有一种物体，发声时它的运动很容易观察？"
+    },
+    {
+      "id": "starter-physics-2-short",
+      "subject": "physics",
+      "grade": 2,
+      "type": "short",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:惯性",
+        "name": "惯性"
+      },
+      "text": "汽车突然刹车时，乘客为什么会向前倾？安全带起什么作用？",
+      "rubric": "乘客因惯性保持原先运动状态，车辆减速时相对向前；安全带施力使人减速、限制位移，不把惯性当作一种力。",
+      "hint": "汽车减速的瞬间，人的身体倾向于保持什么状态？"
+    },
+    {
+      "id": "starter-physics-2-open",
+      "subject": "physics",
+      "grade": 2,
+      "type": "open",
+      "difficulties": [
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "knowledgePoint": {
+        "id": "physics:牛顿第一定律",
+        "name": "牛顿第一定律"
+      },
+      "text": "有人说“物体运动就一定受到向前的力”。请用一个实验或情境反驳，并解释原因。",
+      "rubric": "说明运动无需持续向前的力维持，合力改变速度而非维持速度；接受低摩擦滑行、惯性、理想无外力匀速运动等合理论证。",
+      "hint": "想一想牛顿第一定律和光滑表面上的滑行。"
+    }
+  ]
+}

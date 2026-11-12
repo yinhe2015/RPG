@@ -2,16 +2,14 @@
 
 ## 仙剑奇侠主题
 
-`pal/` 和 `public/themes/pal/` 均不进入 Git 仓库；下面描述的是本地资源配置，不表示授予原版素材的再分发许可。仓库提交规则见 [仓库说明](repository.md)。
+提取好的图片与音频统一放在 `public/themes/pal/`，该目录不进入 Git 仓库。配置方法见 [主题文档](themes.md#仙剑资源配置)，提交规则见 [仓库说明](repository.md)。
 
-- 输入：用户提供的本地 `pal/` DOS 游戏资源；原文件保持不变。
-- 输出：`public/themes/pal/`，由 `scripts/extract-pal.py` 从 MKF 数据提取 PNG 和动作姿态。
-- 地图行走：从 `DATA.MKF` 的角色记录读取李逍遥的地图精灵编号，再从 `MGO.MKF` 提取四个朝向、每方向三帧的原版行走动作。图集为 `walking-2.png`，映射为 `src/themes/pal-walk.json`；可用 `python3 scripts/extract-pal.py --walking-only` 单独重新提取。
-- 原版音频：`public/themes/pal/audio/`。7 段音乐从 `MUS.MKF` 的 RIX 数据解码，7 种角色音效从 `VOC.MKF` 转成 WAV；没有使用外部下载的游戏录音。索引、时长和原始文件 SHA-256 见 `src/themes/pal-audio.json`。
-- 音频转换依赖 [AdPlug](https://github.com/adplug/adplug) 2.4（LGPL-2.1-or-later，系统安装的共享库，仅离线转换时使用）及 FFmpeg。RIX 格式由该库解析，OPL2 模拟器生成原版 FM 乐器声音。游戏音乐及音效的权利仍归原权利人。
+- 图片：已从用户提供的本地 DOS 游戏资源提取为 PNG，包括背景、人物、妖怪、姿态和头像。
+- 地图行走：`walking-2.png` 包含李逍遥四个朝向、每方向三帧的动作，来源为 `MGO.MKF`；映射和尺寸见 `src/themes/pal-walk.json`。
+- 原版音频：`audio/` 中的 7 段 MP3 源自 `MUS.MKF`，7 种 WAV 音效源自 `VOC.MKF`。索引、时长和原始文件 SHA-256 见 `src/themes/pal-audio.json`。
+- 当前资源的音乐曾通过 AdPlug 2.4 / OPL2 离线转换；项目直接使用转换结果，不包含提取器、解压器或音频转换工具。
 - 人物动作帧语义参考 [SDLPAL fight.c](https://github.com/sdlpal/sdlpal/blob/master/fight.c)，角色音效字段参考 [SDLPAL global.h](https://github.com/sdlpal/sdlpal/blob/master/global.h)。
-- 美术版权仍属于原游戏权利人，本项目没有把这些资源声明为开源或 CC0。
-- 格式参考：[SDLPAL palcommon.c](https://github.com/sdlpal/sdlpal/blob/master/palcommon.c)。离线解压器 [`yj1.c`](https://github.com/sdlpal/sdlpal/blob/master/yj1.c) 原样存于 `scripts/vendor/`，Copyright Wei Mingzhi / SDLPAL development team，GPL-3.0，完整许可 `scripts/vendor/COPYING`。新增 `common.h` 只是独立编译兼容头，不依赖 SDL。提取工具不参与网页运行。
+- 美术、音乐和音效版权仍属于原游戏权利人，本项目没有把这些资源声明为开源或 CC0。
 
 ## 方块世界主题
 

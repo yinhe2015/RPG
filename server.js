@@ -5,6 +5,8 @@ import {resolve,extname,sep} from 'node:path';
 import {createApiMiddleware,blockPrivateFiles} from './server/api.js';
 
 const root=fileURLToPath(new URL('./dist/',import.meta.url));
+const host=process.env.HOST||'0.0.0.0';
+const port=Number(process.env.PORT)||5173;
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.woff2':'font/woff2','.mp3':'audio/mpeg','.wav':'audio/wav'};
 const api=createApiMiddleware();
 createServer((req,res)=>blockPrivateFiles(req,res,()=>api(req,res,async()=>{
@@ -16,4 +18,4 @@ createServer((req,res)=>blockPrivateFiles(req,res,()=>api(req,res,async()=>{
     res.writeHead(200,{'Content-Type':mime[extname(file)]||'application/octet-stream','X-Content-Type-Options':'nosniff'});
     res.end(await readFile(file));
   }catch{res.writeHead(404);res.end('先运行 npm run build');}
-}))).listen(Number(process.env.PORT)||5173,process.env.HOST||'127.0.0.1',()=>console.log(`游戏已启动：http://${process.env.HOST||'127.0.0.1'}:${Number(process.env.PORT)||5173}`));
+}))).listen(port,host,()=>console.log(`游戏已启动：http://${host}:${port}`));

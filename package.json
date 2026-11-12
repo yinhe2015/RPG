@@ -13,8 +13,6 @@
     "test:browser": "npm run build && node tests/browser.mjs",
     "test:themes": "npm run build && node tests/themes-browser.mjs",
     "bank:check": "node scripts/check-bank.js",
-    "assets:pal": "python3 scripts/extract-pal.py",
-    "assets:pal-audio": "python3 scripts/extract-pal-audio.py",
     "theme:create": "node scripts/create-theme.js",
     "test:theme-extension": "node tests/theme-extension-browser.mjs",
     "bank:import:ceval": "python3 scripts/import-ceval.py",

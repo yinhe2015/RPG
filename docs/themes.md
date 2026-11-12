@@ -130,24 +130,30 @@ npm run test:theme-extension
 
 `test:theme-extension` 在临时副本里真正生成并构建第四个主题，验证设置自动发现、服务端保存、刷新恢复及继承的战斗界面，不会在日常游戏里留下测试主题或测试账号。
 
-## 仙剑资源提取
+## 仙剑资源配置
 
-从用户提供的 `pal/` 只读提取，未运行其中 EXE。`FBP.MKF` 提供背景，`ABC.MKF` 提供妖怪，`F.MKF` 提供队伍人物，`PAT.MKF` 提供调色板，`RGM.MKF` 提供头像。提取结果已生成，正常运行无需安装提取工具。
+将已提取好的资源直接放入 `public/themes/pal/`，保留文件名和目录结构：
 
-重新生成需要 Python 3、Pillow 和 C 编译器：
-
-```sh
-python3 -m pip install Pillow
-python3 scripts/extract-pal.py
-npm run build
+```text
+public/themes/pal/
+├── background-*.png       # 战斗背景
+├── enemies-*.png          # 妖怪图集及姿态
+├── players-*.png          # 队伍人物图集及姿态（学习版也使用）
+├── portrait-*.png         # 头像
+├── walking-2.png          # 四个朝向的行走图集
+└── audio/
+    ├── music-*.mp3        # 7 段音乐
+    └── sound-*.wav        # 7 种战斗音效
 ```
 
-提取器生成 PNG、动作姿态和尺寸清单，并将联络表写入 `artifacts/pal-extraction/` 供检查。离线 YJ1 解码工具来自 SDLPAL，授权文件在 `scripts/vendor/COPYING`；这不改变仙剑游戏美术的原始权利归属。详细来源见 [`asset-sources.md`](./asset-sources.md)。
+资源必须与仓库中的 `src/themes/pal-assets.json`、`src/themes/pal-walk.json` 和 `src/themes/pal-audio.json` 匹配；这些清单保留图片尺寸、动作帧和音频播放配置，由应用直接读取。资源目录只需放入提取好的图片和音频，无需复制清单副本。
+
+配置完成后运行 `npm run build`，再启动服务；开发模式可直接运行 `npm run dev`。部署时使用包含这些静态资源的构建结果。原始游戏文件、提取脚本和转换工具均不再需要，项目中只保留主题运行代码、素材清单及本地提取结果。详细来源见 [素材说明](asset-sources.md)。
 
 探索地图共用格点和交互逻辑，以 `--maze-floor / --maze-wall / --maze-line / --maze-panel / --maze-text` 控制外观。仙剑主题复用本地原版角色和妖怪像素素材；方块主题复用 Kenney 地形，手绘主题沿用 SVG 角色。新增主题时可添加变量、地形 CSS 和探索角色的美术渲染。
 
-纸上冒险和方块世界的程序合成配乐配置在 `src/themes/soundtracks.js`。仙剑配乐独立配置在 `src/themes/pal-audio.json`，实际播放本地 `MUS.MKF` 的 DOS RIX 原曲，经 AdPlug 的 OPL2 模拟器离线转换为 MP3，保留原曲音符、节奏及 FM 乐器数据，不使用之前的短循环代替原曲。大厅、迷宫、普通战斗、Boss 战分别使用原始块 5、19、36、46；普通胜利、Boss 胜利、失败使用块 3、2、1，结算曲只播放一次。浏览器的解码和音量设置可能与当年声卡输出存在差别。
+纸上冒险和方块世界的程序合成配乐配置在 `src/themes/soundtracks.js`。仙剑配乐独立配置在 `src/themes/pal-audio.json`，直接播放 `public/themes/pal/audio/` 中已转换好的 MP3；这些资源源自 `MUS.MKF` 的 DOS RIX 原曲。大厅、迷宫、普通战斗、Boss 战分别使用原始块 5、19、36、46；普通胜利、Boss 胜利、失败使用块 3、2、1，结算曲只播放一次。浏览器的解码和音量设置可能与当年声卡输出存在差别。
 
-仙剑攻击、挥剑、暴击、施法、格挡、濒死和倒下音效来自 `VOC.MKF`，索引读取 `DATA.MKF` 中李逍遥的角色配置。重建音频：先安装 AdPlug、pkg-config、FFmpeg 和 C++ 编译器（macOS 可用 `brew install adplug pkg-config ffmpeg`），再运行 `npm run assets:pal-audio`。转换器为 `scripts/extract-pal-audio.py` 和 `scripts/render-pal-rix.cpp`；运行网页无需安装这些转换工具。源档案哈希及曲目索引保存在音频清单中。
+仙剑攻击、挥剑、暴击、施法、格挡、濒死和倒下音效直接使用 `public/themes/pal/audio/` 中的 WAV，来源为 `VOC.MKF`，索引对应 `DATA.MKF` 中李逍遥的角色配置。源档案哈希及曲目索引保存在音频清单中，仅用于记录来源。
 
-仙剑战斗直接显示 F.MKF 连续动作帧：蓄力 7、挥剑 8、收招 9、受击 4、格挡 3、倒下 2。出招时先移动到敌人面前，再播放挥剑与命中音效、受击闪烁、伤害数字、返回站位；怪物也切换动作帧，胜负演出后立即切换结算曲。动画仅展示服务端已确认的结果，并遵守减少动态效果设置。背景音乐和操作音效分别受现有开关控制，切换主题或场景会停止旧配乐，切到后台暂停声音。
+仙剑战斗使用已提取的人物 PNG 图集播放连续动作帧：蓄力 7、挥剑 8、收招 9、受击 4、格挡 3、倒下 2。出招时先移动到敌人面前，再播放挥剑与命中音效、受击闪烁、伤害数字、返回站位；怪物也切换动作帧，胜负演出后立即切换结算曲。动画仅展示服务端已确认的结果，并遵守减少动态效果设置。背景音乐和操作音效分别受现有开关控制，切换主题或场景会停止旧配乐，切到后台暂停声音。

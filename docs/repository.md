@@ -10,7 +10,7 @@
 - `data/`：账号、密码哈希、学习问答、错题与存档。克隆后注册新账号。
 - 日志、PID、截图（`error.png`、`other/`）、测试截图与报告（`artifacts/`）。
 - `node_modules/`、`dist/`、编辑器配置和 Python 缓存。
-- `pal/` 和 `public/themes/pal/`：仙剑原文件、提取图片、角色帧、背景、音乐及音效。
+- `public/themes/pal/`：仙剑已提取的图片、角色帧、背景、音乐及音效。
 
 提交前运行 `npm run repo:check`。检查读取 Git 暂存区，阻止排除路径、常见密钥、密码哈希、个人绝对路径和本地私密值进入提交，报告只输出文件名和规则。它是基础检查，不能保证发现所有形式的敏感信息。可执行 `git config core.hooksPath .githooks` 启用提交前检查。
 
@@ -18,9 +18,9 @@ Git 提交作者使用 GitHub 的 noreply 邮箱。`.gitignore` 不会清除已�
 
 ## 仙剑资源
 
-仓库提供兼容代码、素材映射元数据及本地提取工具，不提供游戏资源或它们的再分发许可。保留人物名称和主题适配代码不代表项目获得官方授权，也不代表相关角色、标识或素材可任意用于公开发行。私有仓库可限制访问，但不会替代素材授权。
+仓库提供兼容代码及素材映射元数据，不提供游戏资源或它们的再分发许可。保留人物名称和主题适配代码不代表项目获得官方授权，也不代表相关角色、标识或素材可任意用于公开发行。私有仓库可限制访问，但不会替代素材授权。
 
-克隆后先使用纸上冒险或方块世界。仙剑主题和学习版人物图像需要另行在本地配置有权使用的资源；未配置时相应图片及原版音频不可用。资源提取步骤见 [主题文档](themes.md)，来源见 [素材说明](asset-sources.md)。提取出的资源仍受 `.gitignore` 保护。
+克隆后先使用纸上冒险或方块世界。仙剑主题和学习版人物图像需要另行在本地配置有权使用的资源；未配置时相应图片及原版音频不可用。将提取好的文件直接放入 `public/themes/pal/`，具体目录结构见 [主题文档](themes.md#仙剑资源配置)，来源见 [素材说明](asset-sources.md)。提取出的资源仍受 `.gitignore` 保护。
 
 本机已配置资源的功能不受这些 Git 排除规则影响。任何公开部署、分发或商业用途，都应另行确认涉及的游戏素材、人物与标识等权利，或者替换为自行创作/取得许可的素材。
 
@@ -32,7 +32,6 @@ Git 提交作者使用 GitHub 的 noreply 邮箱。`.gitignore` 不会清除已�
 | --- | --- | --- |
 | 方块图形 | [Kenney Voxel Pack](https://kenney.nl/assets/voxel-pack)，CC0 | `public/themes/voxel/LICENSE.txt`；不是 Mojang 原版贴图 |
 | C-Eval 中学题库 | [C-Eval](https://github.com/hkust-nlp/ceval)，数据采用 [CC BY-NC-SA 4.0](https://github.com/hkust-nlp/ceval/blob/main/LICENSE-DATA) | `docs/licenses/CEVAL-LICENSE-DATA.txt`；保留非商业、署名和相同方式共享要求 |
-| 离线解压代码 | [SDLPAL](https://github.com/sdlpal/sdlpal)，GPL-3.0 | `scripts/vendor/yj1.c` 保留原版权头；完整许可 `scripts/vendor/COPYING`；不包含游戏数据 |
 
 C-Eval 数据集作者与贡献者的原始来源在上游仓库；本项目对子集进行了筛选、格式转换、知识点标注及问题记录过滤，具体变更见 `docs/ceval-import-report.json`、`scripts/import-ceval.py` 和题库自身的来源字段。该派生子集沿用 CC BY-NC-SA 4.0，不将它改标成代码许可证或 CC0。商用版本需要移除或另行授权该数据集。
 

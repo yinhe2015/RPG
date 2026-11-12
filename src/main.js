@@ -11,6 +11,7 @@ import {profileText} from './profile-text.js';
 import {reconcileBankPreferences} from './bank-preferences.js';
 import {playBattleMotion} from './ui/battle-motion.js';
 import {dungeonView,syncDungeon,positionCamera,routeTo} from './ui/dungeon.js';
+import {createRequestSignal} from './request-signal.js';
 
 async function bootstrap(){
  authState='loading';render();
@@ -86,9 +87,12 @@ function expireLogin(){battle?.controller.abort();battle=null;dungeon=null;accou
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').classList.remove('visible'),3200);}
 function updateAudio(){configureAudio(profile,audioScene({battle,dungeon,result}));}
 async function api(path,body,signal){
- const response=await fetch(`/api/${path}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:signal?AbortSignal.any([signal,AbortSignal.timeout(70000)]):AbortSignal.timeout(70000)});
- let data;try{data=await response.json();}catch{throw new Error('游戏服务暂时没有响应，请重试。');}
- if(!response.ok){if(response.status===401&&!path.startsWith('auth/'))expireLogin();const error=new Error(data.error||'暂时无法连接，请稍后重试。');error.status=response.status;throw error;}return data;
+ const request=createRequestSignal(70000,signal);
+ try{
+  const response=await fetch(`/api/${path}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:request.signal});
+  let data;try{data=await response.json();}catch{throw new Error('游戏服务暂时没有响应，请重试。');}
+  if(!response.ok){if(response.status===401&&!path.startsWith('auth/'))expireLogin();const error=new Error(data.error||'暂时无法连接，请稍后重试。');error.status=response.status;throw error;}return data;
+ }finally{request.dispose();}
 }
 
 function render(){

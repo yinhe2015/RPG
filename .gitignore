@@ -32,6 +32,5 @@ __pycache__/
 /*.jpeg
 /*.webp
 
-# Proprietary PAL originals AND extracted images/music stay local.
-pal/
+# Pre-extracted PAL images and audio stay local.
 /public/themes/pal/

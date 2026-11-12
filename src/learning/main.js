@@ -8,6 +8,7 @@ import assets from '../themes/pal-assets.json';
 import {streamEvents} from '../stream-events.js';
 import {languages,languageOf} from './languages.js';
 import {createNarrator} from './narrator.js';
+import {createRequestSignal} from '../request-signal.js';
 
 const root=document.querySelector('#learning-app'),stages=['小学','初中','高中'];
 let user=null,data={sessions:[],mistakes:[],topics:[]},session=null,busy=false,error='',loading=true,authMode='login',drawer=false,draft='',attempt=null;
@@ -23,16 +24,19 @@ const nameOf=id=>subjects.find(s=>s.id===id)?.name||id;
 const teacherOf=id=>teachers.find(t=>t.id===id)||teachers[0];
 const portrait=t=>`<img src="/themes/pal/${assets.players[t.sprite].poses[0].src}" alt="${t.name}" class="teacher-sprite">`;
 async function request(path,body,onEvent){
- const response=await fetch(`/api/${path}`,{method:body?'POST':'GET',headers:{...(body?{'Content-Type':'application/json'}:{}),...(onEvent?{Accept:'text/event-stream'}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(100000)});
- if(!response.ok){const value=await response.json();if(response.status===401){narrator.stop();user=null;session=null;preview=null;data={sessions:[],mistakes:[],topics:[]};draft='';attempt=null;}throw Error(value.error||'暂时无法连接，请重试。');}
- if(onEvent&&response.headers.get('content-type')?.includes('text/event-stream')){
-  let result;for await(const event of streamEvents(response.body)){
-   const value=JSON.parse(event.data);if(event.event==='error')throw Error(value.error);
-   if(event.event==='done'){result=value;break;}onEvent(event.event,value);
+ const pending=createRequestSignal(100000);
+ try{
+  const response=await fetch(`/api/${path}`,{method:body?'POST':'GET',headers:{...(body?{'Content-Type':'application/json'}:{}),...(onEvent?{Accept:'text/event-stream'}:{})},body:body?JSON.stringify(body):undefined,signal:pending.signal});
+  if(!response.ok){const value=await response.json();if(response.status===401){narrator.stop();user=null;session=null;preview=null;data={sessions:[],mistakes:[],topics:[]};draft='';attempt=null;}throw Error(value.error||'暂时无法连接，请重试。');}
+  if(onEvent&&response.headers.get('content-type')?.includes('text/event-stream')){
+   let result;for await(const event of streamEvents(response.body)){
+    const value=JSON.parse(event.data);if(event.event==='error')throw Error(value.error);
+    if(event.event==='done'){result=value;break;}onEvent(event.event,value);
+   }
+   if(!result)throw Error('回复途中连接中断，请重试。你的输入已保留。');return result;
   }
-  if(!result)throw Error('回复途中连接中断，请重试。你的输入已保留。');return result;
- }
- return response.json();
+  return await response.json();
+ }finally{pending.dispose();}
 }
 function reference(q,withAnswer=false){
  return `<div class="reference"><small>${esc(q.bankName||'冒险错题')} · ${esc(q.knowledgePoint?.name||'')}</small><p>${questionText(q.text)}</p>${q.options?.length?`<ol type="A">${q.options.map(v=>`<li>${questionText(v)}</li>`).join('')}</ol>`:''}<p class="original-answer">你当时的回答：${questionText(q.studentAnswer)}</p>${withAnswer?`<details><summary>查看原参考思路</summary><p>${questionText(q.reference)}</p><p>${questionText(q.explanation)}</p></details>`:''}</div>`;
@@ -76,10 +80,11 @@ async function load(){
 }
 async function send(start=false){
  if(busy)return;if(!start&&!draft.trim())return;
- const payload=start?{teacherId:choice.teacherId,subject:choice.subject,grade:choice.grade,topic:choice.topic,language:choice.language,...(choice.source==='mistake'?{mistakeId:choice.mistakeId}:{})}:{sessionId:session.id,text:draft,version:session.messages.length,language:choice.language};
- const signature=JSON.stringify(payload);if(attempt?.signature!==signature)attempt={signature,start,requestId:crypto.randomUUID()};
- narrator.stop();busy=true;starting=start;error='';streamText='';partialReply='';render();
  try{
+  const payload=start?{teacherId:choice.teacherId,subject:choice.subject,grade:choice.grade,topic:choice.topic,language:choice.language,...(choice.source==='mistake'?{mistakeId:choice.mistakeId}:{})}:{sessionId:session.id,text:draft,version:session.messages.length,language:choice.language};
+  // Unlike randomUUID, getRandomValues also works on HTTP LAN addresses.
+  const signature=JSON.stringify(payload);if(attempt?.signature!==signature)attempt={signature,start,requestId:Array.from(crypto.getRandomValues(new Uint8Array(16)),byte=>byte.toString(16).padStart(2,'0')).join('')};
+  narrator.stop();busy=true;starting=start;error='';streamText='';partialReply='';render();
   const response=await request(`learning/${start?'start':'chat'}`,{...payload,requestId:attempt.requestId},(event,value)=>{
    if(event==='ready'){if(start){preview=value.session;render();}return;}
    if(event==='delta'){

@@ -16,6 +16,10 @@ async function stop(){if(server&&server.exitCode===null){server.kill('SIGTERM');
 await launch();
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+// Exercise registration, combat, skills and retries on browsers missing these APIs.
+await page.addInitScript(()=>{
+ for(const name of ['any','timeout'])Object.defineProperty(AbortSignal,name,{configurable:true,value:undefined});
+});
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
 const click=action=>page.locator(`[data-action="${action}"]`).first().click();
 const username='知识勇者',password='adventure-1234';
